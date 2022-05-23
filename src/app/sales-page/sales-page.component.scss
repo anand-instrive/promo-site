@@ -2,7 +2,10 @@
   padding: 10px 0;
 }
 
-
+.check-margin {
+  margin-top: 10px;
+  margin-left: 5px;
+}
 
 .menu-ul {
   li {
@@ -224,16 +227,12 @@
   }
   .vidoe-mid-scr{
     display: block !important;
-  }
-  .small-scr-menu {
-    // display: block !important;
-  }
+  } 
 
 }
 
 @media only screen and (min-width: 1200px) {
-  
-  
+    
 }
 
 .purple-content {
@@ -447,7 +446,7 @@ a:hover
   width: 40px;
   height: 32px;
   position: absolute;
-  top: -7px;
+  top: 0px;
   left: -5px;
   
   cursor: pointer;
@@ -529,12 +528,12 @@ a:hover
   position: absolute;
   width: 100vw;
   margin: -40px 0 0 0;
-  padding: 50px;
-  padding-top: 125px;
+  padding: 50px 20px;
+  padding-top: 60px;
   right: -10px;
   height: 100vh;
   
-  background: #ededed;
+  background: white;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
@@ -542,7 +541,7 @@ a:hover
   transform-origin: 0% 0%;
   transform: translate(100%, 0);
   
-  transition: transform .7s cubic-bezier(0.77,0.2,0.05,1.0);
+  transition: transform .3s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
 #menu li
@@ -558,13 +557,4 @@ a:hover
 {
   transform: none;
   opacity: 1;
-}
-
-@media screen and (max-width: 768px) {
-  #menu {
-    transform: none;
-    opacity: 0;
-
-    transition: opacity 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-  }
 }

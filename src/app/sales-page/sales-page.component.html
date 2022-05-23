@@ -1,44 +1,138 @@
 <div>
 
-  <div class="d-flex bg-white  container-fluid position-fixed  pt-2 pb-1 px-2  menu-z-view small-scr-menu d-lg-none d-md-block d-sm-block">
-    <div class=" my-auto px-2">
+  <div class="d-flex bg-white  container-fluid position-fixed  pt-2 pb-2 pb-1 px-2  menu-z-view small-scr-menu d-lg-none d-md-block d-sm-block ">
+    <div class=" my-auto px-2 ">
       <img class="img-fluid imgs " src="assets/images/logo.svg" >
     </div>         
       
-    <div id="menuToggle" class="small-menu">
-      <!--
-      A fake / hidden checkbox is used as click reciever,
-      so you can use the :checked selector on it.
-      -->
-      <input type="checkbox" />
+    <div id="menuToggle" class="small-menu pt-3  ">
+     
+      <input class="check-margin" type="checkbox" />     
       
-      <!--
-      Some spans to act as a hamburger.
-      
-      They are acting like a real hamburger,
-      not that McDonalds stuff.
-      -->
       <span></span>
       <span></span>
-      <span></span>
+      <span></span>  
       
-      <!--
-      Too bad the menu has to be inside of the button
-      but hey, it's pure CSS magic.
-      -->
+     
       <ul id="menu" class="">
-        <a href="https://www.google.com/"><li>Home</li></a>
+
+
+        <ngb-accordion #acc="ngbAccordion"[closeOthers]="true">
+          <ngb-panel title="Home" >
+            <ng-template ngbPanelContent>
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia
+              aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+              sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+              craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+              occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+              labore sustainable VHS.
+            </ng-template>
+          </ngb-panel>
+          <ngb-panel title="Create">
+            <ng-template ngbPanelContent>
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia
+              aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+              sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+              craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+              occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+              labore sustainable VHS.
+            </ng-template>
+          </ngb-panel>
+          <ngb-panel title="Template">
+            <ng-template ngbPanelContent>
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia
+              aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+              sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+              craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+              occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+              labore sustainable VHS.
+            </ng-template>
+          </ngb-panel>
+          <ngb-panel title="Tools">
+            <ng-template ngbPanelContent>
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia
+              aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+              sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+              craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+              occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+              labore sustainable VHS.
+            </ng-template>
+          </ngb-panel>
+          <ngb-panel title="Resources">
+            <ng-template ngbPanelContent>
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia
+              aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+              sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+              craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+              occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+              labore sustainable VHS.
+            </ng-template>
+          </ngb-panel>
+          <ngb-panel title="Company">
+            <ng-template ngbPanelContent>
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia
+              aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+              sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+              craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+              occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+              labore sustainable VHS.
+            </ng-template>
+          </ngb-panel>
+          <ngb-panel title="Calendar">
+            <ng-template ngbPanelContent>
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia
+              aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+              sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+              craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+              occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+              labore sustainable VHS.
+            </ng-template>
+          </ngb-panel>
+          <ngb-panel title="Pricing">
+            <ng-template ngbPanelContent>
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia
+              aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+              sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+              craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+              occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+              labore sustainable VHS.
+            </ng-template>
+          </ngb-panel>
+          <ngb-panel title="Login">
+            <ng-template ngbPanelContent>
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia
+              aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+              sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+              craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+              occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+              labore sustainable VHS.
+            </ng-template>
+          </ngb-panel>
+          <ngb-panel title="Sign Up">
+            <ng-template ngbPanelContent>
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia
+              aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+              sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+              craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+              occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+              labore sustainable VHS.
+            </ng-template>
+          </ngb-panel>
+        </ngb-accordion>
+
+
+        <!-- <a href="https://www.google.com/"><li>Home</li></a>
         <a href="https://www.google.com/"><li>About</li></a>
         <a href="https://www.google.com/"><li>Info</li></a>
         <a href="https://www.google.com/"><li>Contact</li></a>
-        <a href="https://www.google.com/" target="_blank"><li>Show me more</li></a>
+        <a href="https://www.google.com/" target="_blank"><li>Show me more</li></a> -->
       </ul>
     </div>     
     
   </div>
 
   
-  <div class="d-flex bg-white container-fluid position-fixed border pt-2 pb-1 px-2 main-menu-lg menu-z-view ">
+  <div class="d-flex bg-white container-fluid position-fixed  pt-2 pb-1 px-2 main-menu-lg menu-z-view ">
     <div class="my-auto px-2">
       <img class="img-fluid imgs " src="assets/images/logo.svg">
     </div>
@@ -406,8 +500,8 @@
         <video class="w-100 d-none vidoe-mid-scr" src="//ak02-video-cdn.slidely.com/static/promo-videos/promo-com/promo.com_BG_tablet_v2.webm"
         muted="muted" loop="loop" autoplay="autoplay" playsinline=""></video>        
 
-      <div class="d-flex position-absolute main-video-content border">
-        <span class="text-center text-white m-auto  border">
+      <div class="d-flex position-absolute main-video-content ">
+        <span class="text-center text-white m-auto  ">
           <div class="">
             <span class="d-flex  main-video-content-head ">
               <p> The only video <span class="break"></span> maker you need</p>
