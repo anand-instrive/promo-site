@@ -1,10 +1,9 @@
 <div>
 
-  <div class="d-flex bg-white  container-fluid position-fixed border pt-2 pb-1 px-2  menu-z-view ">
+  <div class="d-flex bg-white  container-fluid position-fixed  pt-2 pb-1 px-2  menu-z-view small-scr-menu d-lg-none d-md-block d-sm-block">
     <div class=" my-auto px-2">
       <img class="img-fluid imgs " src="assets/images/logo.svg" >
-    </div>
-         
+    </div>         
       
     <div id="menuToggle" class="small-menu">
       <!--
@@ -28,19 +27,15 @@
       but hey, it's pure CSS magic.
       -->
       <ul id="menu" class="">
-        <a href="#"><li>Home</li></a>
-        <a href="#"><li>About</li></a>
-        <a href="#"><li>Info</li></a>
-        <a href="#"><li>Contact</li></a>
-        <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>
+        <a href="https://www.google.com/"><li>Home</li></a>
+        <a href="https://www.google.com/"><li>About</li></a>
+        <a href="https://www.google.com/"><li>Info</li></a>
+        <a href="https://www.google.com/"><li>Contact</li></a>
+        <a href="https://www.google.com/" target="_blank"><li>Show me more</li></a>
       </ul>
-    </div>
-      
-
+    </div>     
     
   </div>
-
-  
 
   
   <div class="d-flex bg-white container-fluid position-fixed border pt-2 pb-1 px-2 main-menu-lg menu-z-view ">
@@ -48,12 +43,12 @@
       <img class="img-fluid imgs " src="assets/images/logo.svg">
     </div>
     
-    <div (mouseleave)="collapse1.toggle()" >
+    <div class="">
       
       <div class="position-relative px-1 pt-3 ">
         <p class="">
           <button type="button" class="d-flex btn btn-link text-decoration-none text-dark txt-bg "
-            (mouseenter)="collapse1.toggle() "  [attr.aria-expanded]="!isCollapsed1"
+            (mouseenter)="collapse1.toggle()" (mouseleave)="collapse1.toggle()"  [attr.aria-expanded]="!isCollapsed1"
             aria-controls="collapseExample">
             <span>Create</span> <span class="rotate-arrow "><i class="bi bi-chevron-down"></i></span> 
           </button>
@@ -164,11 +159,11 @@
 
     </div>
 
-    <div (mouseleave)="collapse2.toggle()" class="border">
+    <div  class="">
       <div class="position-relative  px-1 pt-3 ">
         <p class="">
           <button type="button" class="d-flex btn btn-link text-decoration-none text-dark txt-bg"
-            (mouseenter)="collapse2.toggle()"  [attr.aria-expanded]="!isCollapsed2"
+            (mouseenter)="collapse2.toggle()" (mouseleave)="collapse2.toggle()" [attr.aria-expanded]="!isCollapsed2"
             aria-controls="collapseExample">
             <span>Template</span> <span class="rotate-arrow "><i class="bi bi-chevron-down"></i></span> 
           </button>
@@ -239,11 +234,11 @@
     </div>
 
 
-    <div (mouseleave)="collapse3.toggle()">
+    <div >
       <div class="position-relative  px-1 pt-3 ">
         <p class="">
           <button type="button" class="d-flex btn btn-link text-decoration-none text-dark txt-bg"
-            (mouseenter)="collapse3.toggle()"  [attr.aria-expanded]="!isCollapsed3"
+            (mouseenter)="collapse3.toggle()" (mouseleave)="collapse3.toggle()"  [attr.aria-expanded]="!isCollapsed3"
             aria-controls="collapseExample">
             <span>Tools</span> <span class="rotate-arrow "><i class="bi bi-chevron-down"></i></span> 
           </button>
@@ -320,11 +315,11 @@
 
 
 
-    <div (mouseleave)="collapse4.toggle()">
+    <div >
       <div class="position-relative  px-1 pt-3 ">
         <p class="">
           <button type="button" class="d-flex btn btn-link text-decoration-none text-dark txt-bg"
-            (mouseenter)="collapse4.toggle()"  [attr.aria-expanded]="!isCollapsed4"
+            (mouseenter)="collapse4.toggle()" (mouseleave)="collapse4.toggle()"  [attr.aria-expanded]="!isCollapsed4"
             aria-controls="collapseExample">
              <span>Resources</span> <span class="rotate-arrow "><i class="bi bi-chevron-down"></i></span> 
           </button>
@@ -392,7 +387,7 @@
 
     <div class="d-flex text-end  btn-login  ">
       <div class="mx-3 text-center my-auto">
-        <a href="" class="text-decoration-none text-dark txt-bg">Login</a>
+        <a href="https://www.instrive.in/" class="text-decoration-none text-dark txt-bg">Login</a>
       </div>
       <div class="mx-1 my-3">
         <button class="rounded-pill py-2 px-4 border-1 try-bg-change">Try for me</button>
@@ -643,7 +638,7 @@
         <h5 class="">Explore our massive <strong>Facebook ad creator</strong> template library</h5>
       </div>
       <div class="col-lg-6 col-md-12 col-sm-12  img-right-txt text-end">
-        <a href="" class="text-dark">View all Facebook ad templates</a>
+        <a href="https://www.instrive.in/" class="text-dark">View all Facebook ad templates</a>
       </div>
     </div>
     <div class="d-flex row pt-3 justify-content-between pb-5">
@@ -708,7 +703,7 @@
         </div>
       </div>
       <div class="col-lg-6 col-md-12 col-sm-12  img-right-txt-alter d-none  text-center">
-        <a href="" class="text-dark">View all Facebook ad templates</a>
+        <a href="https://www.instrive.in/" class="text-dark">View all Facebook ad templates</a>
       </div>
     </div>
   </div>
@@ -718,7 +713,7 @@
         <h5 class="">Create a story in seconds with these prebuilt <strong>Instagram story templates</strong></h5>
       </div>
       <div class="col-lg-6 col-md-12 col-sm-12  img-right-txt text-end">
-        <a href="" class="text-dark">View all Instagram story templates</a>
+        <a href="https://www.instrive.in/" class="text-dark">View all Instagram story templates</a>
       </div>
     </div>
     <div class="d-flex row pt-3 justify-content-between pb-5">
@@ -783,7 +778,7 @@
         </div>
       </div>
       <div class="col-lg-6 col-md-12 col-sm-12  img-right-txt-alter d-none  text-center">
-        <a href="" class="text-dark">Instagram story templates</a>
+        <a href="https://www.instrive.in/" class="text-dark">Instagram story templates</a>
       </div>
     </div>
   </div>
@@ -793,7 +788,7 @@
         <h5 class="">Make an impression with our <strong>YouTube intro templates</strong></h5>
       </div>
       <div class="col-lg-6 col-md-12 col-sm-12  img-right-txt text-end">
-        <a href="" class="text-dark">View all YouTube intro templates</a>
+        <a href="https://www.instrive.in/" class="text-dark">View all YouTube intro templates</a>
       </div>
     </div>
     <div class="d-flex row pt-3 justify-content-between pb-5">
@@ -858,7 +853,7 @@
         </div>
       </div>
       <div class="col-lg-6 col-md-12 col-sm-12  img-right-txt-alter d-none  text-center">
-        <a href="" class="text-dark">View all YouTube intro templates</a>
+        <a href="https://www.instrive.in/" class="text-dark">View all YouTube intro templates</a>
       </div>
     </div>
   </div>
@@ -868,7 +863,7 @@
         <h5 class="">Videos to amaze your audience's<strong>Instagram feed</strong></h5>
       </div>
       <div class="col-lg-6 col-md-12 col-sm-12  img-right-txt text-end">
-        <a href="" class="text-dark">View all Instagram feed templates</a>
+        <a href="https://www.instrive.in/" class="text-dark">View all Instagram feed templates</a>
       </div>
     </div>
     <div class="d-flex row pt-3 justify-content-between pb-5">
@@ -933,7 +928,7 @@
         </div>
       </div>
       <div class="col-lg-6 col-md-12 col-sm-12  img-right-txt-alter d-none  text-center">
-        <a href="" class="text-dark">View all Instagram feed templates</a>
+        <a href="https://www.instrive.in/" class="text-dark">View all Instagram feed templates</a>
       </div>
     </div>
     <div class="text-center mb-3">
@@ -1009,7 +1004,7 @@
           </div>
         </div>
         <div class="col-lg-6 col-md-12 col-sm-12  img-right-txt-alter d-none  text-center">
-          <a href="" class="text-dark">View all YouTube intro templates</a>
+          <a href="https://www.instrive.in/" class="text-dark">View all YouTube intro templates</a>
         </div>
       </div>
     </div>
@@ -1076,7 +1071,7 @@
           </div>
         </div>
         <div class="col-lg-6 col-md-12 col-sm-12  img-right-txt-alter d-none  text-center">
-          <a href="" class="text-dark">View all YouTube intro templates</a>
+          <a href="https://www.instrive.in/" class="text-dark">View all YouTube intro templates</a>
         </div>
       </div>
     </div>
@@ -1326,7 +1321,7 @@
         </div>
       </div>
 
-      <div class="container-fluid col-md-12- col-sm-12 footer-small-scr-menu-accordion d-none   ">
+      <div class="container-fluid col-md-12- col-sm-12 footer-small-scr-menu-accordion d-none">
         <ngb-accordion [closeOthers]="true">
           <ngb-panel id="static-1" title="COMPANY">
             <ng-template ngbPanelContent>

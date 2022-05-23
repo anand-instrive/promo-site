@@ -2,6 +2,8 @@
   padding: 10px 0;
 }
 
+
+
 .menu-ul {
   li {
     line-height: 2.5rem;
@@ -177,7 +179,10 @@
     display: block !important;
   }
   
+  .footer-small-scr-menu-accordion{
 
+    display: block !important;
+}
 
 }
 
@@ -220,7 +225,9 @@
   .vidoe-mid-scr{
     display: block !important;
   }
-
+  .small-scr-menu {
+    // display: block !important;
+  }
 
 }
 
