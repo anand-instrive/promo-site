@@ -1,0 +1,1523 @@
+<div>
+
+  <div class="d-flex bg-white  container-fluid position-fixed border pt-2 pb-1 px-2  menu-z-view ">
+    <div class=" my-auto px-2">
+      <img class="img-fluid imgs " src="assets/images/logo.svg" >
+    </div>
+         
+      
+    <div id="menuToggle" class="small-menu">
+      <!--
+      A fake / hidden checkbox is used as click reciever,
+      so you can use the :checked selector on it.
+      -->
+      <input type="checkbox" />
+      
+      <!--
+      Some spans to act as a hamburger.
+      
+      They are acting like a real hamburger,
+      not that McDonalds stuff.
+      -->
+      <span></span>
+      <span></span>
+      <span></span>
+      
+      <!--
+      Too bad the menu has to be inside of the button
+      but hey, it's pure CSS magic.
+      -->
+      <ul id="menu" class="">
+        <a href="#"><li>Home</li></a>
+        <a href="#"><li>About</li></a>
+        <a href="#"><li>Info</li></a>
+        <a href="#"><li>Contact</li></a>
+        <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>
+      </ul>
+    </div>
+      
+
+    
+  </div>
+
+  
+
+  
+  <div class="d-flex bg-white container-fluid position-fixed border pt-2 pb-1 px-2 main-menu-lg menu-z-view ">
+    <div class="my-auto px-2">
+      <img class="img-fluid imgs " src="assets/images/logo.svg">
+    </div>
+    
+    <div (mouseleave)="collapse1.toggle()" >
+      
+      <div class="position-relative px-1 pt-3 ">
+        <p class="">
+          <button type="button" class="d-flex btn btn-link text-decoration-none text-dark txt-bg "
+            (mouseenter)="collapse1.toggle() "  [attr.aria-expanded]="!isCollapsed1"
+            aria-controls="collapseExample">
+            <span>Create</span> <span class="rotate-arrow "><i class="bi bi-chevron-down"></i></span> 
+          </button>
+          
+        </p>
+      </div>
+      
+      <div class="position-absolute w-100 toggle-item">
+        <div #collapse1="ngbCollapse" [(ngbCollapse)]="isCollapsed1">
+          <div class="d-flex card">
+            <div class="">
+              <div class="d-flex menu-item-m">
+                <div class="" >
+                  <ul class="menu-ul">
+                    <li class="py-2"><strong>Media</strong></li>
+                    <li> Daily Calendar Videos</li>
+                    <li>Facebook Videos</li>
+                    <li>Instagram Videos</li>
+                    <li>Instagram Videos</li>
+                    <li>YouTube Videos</li>
+                    <li>YouTube Intro Videos</li>
+                  </ul>
+                </div>
+                <div class="">
+                  <ul class="menu-ul">
+                    <li class="py-2"><strong>Industries</strong></li>
+                    <li>Real Estate Videos</li>
+                    <li>Fitness Videos</li>
+                    <li>Fashion Videos</li>
+                    <li>Restaurant Videos</li>
+                    <li>Travel Videos</li>
+                  </ul>
+                </div>
+                <div class="">
+                  <ul class="menu-ul">
+                    <li class="py-2"><strong>Marketing</strong></li>
+                    <li>Commercial Maker</li>
+                    <li>Facebook Story Ads</li>
+                    <li>Instagram Story Ads</li>
+                    <li>LinkedIn Video Ads</li>
+                    <li>YouTube Ads</li>
+                    <li>Promo Videos</li>
+                  </ul>
+                </div>
+                <div class="">
+                  <ul class="menu-ul">
+                    <li class="py-2"><strong>E-commerce</strong></li>
+                    <li>E-commerce Ads</li>
+                    <li>Amazon Video Ads</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="position-absolute w-100 toggle-item">
+        <div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed">
+          <div class="d-flex card">
+            <div class="">
+              <div class="d-flex menu-item-m">
+                <div class="col-2 border" >
+                  <ul class="menu-ul">
+                    <li class="py-2"><strong>Media</strong></li>
+                    <li> Daily Calendar Videos</li>
+                    <li>Facebook Videos</li>
+                    <li>Instagram Videos</li>
+                    <li>Instagram Videos</li>
+                    <li>YouTube Videos</li>
+                    <li>YouTube Intro Videos</li>
+                  </ul>
+                </div>
+                <div class="col-2 border">
+                  <ul class="menu-ul">
+                    <li class="py-2"><strong>Industries</strong></li>
+                    <li>Real Estate Videos</li>
+                    <li>Fitness Videos</li>
+                    <li>Fashion Videos</li>
+                    <li>Restaurant Videos</li>
+                    <li>Travel Videos</li>
+                  </ul>
+                </div>
+                <div class="col-2 border">
+                  <ul class="menu-ul">
+                    <li class="py-2"><strong>Marketing</strong></li>
+                    <li>Commercial Maker</li>
+                    <li>Facebook Story Ads</li>
+                    <li>Instagram Story Ads</li>
+                    <li>LinkedIn Video Ads</li>
+                    <li>YouTube Ads</li>
+                    <li>Promo Videos</li>
+                  </ul>
+                </div>
+                <div class="col-2 border">
+                  <ul class="menu-ul">
+                    <li class="py-2"><strong>E-commerce</strong></li>
+                    <li>E-commerce Ads</li>
+                    <li>Amazon Video Ads</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    
+
+    </div>
+
+    <div (mouseleave)="collapse2.toggle()" class="border">
+      <div class="position-relative  px-1 pt-3 ">
+        <p class="">
+          <button type="button" class="d-flex btn btn-link text-decoration-none text-dark txt-bg"
+            (mouseenter)="collapse2.toggle()"  [attr.aria-expanded]="!isCollapsed2"
+            aria-controls="collapseExample">
+            <span>Template</span> <span class="rotate-arrow "><i class="bi bi-chevron-down"></i></span> 
+          </button>
+        </p>
+      </div>
+      <div class="position-absolute w-100 toggle-item">
+        <div #collapse2="ngbCollapse" [(ngbCollapse)]="isCollapsed2">
+          <div class="d-flex card">
+            <div class="">
+              <div class="d-flex menu-item-m">
+                <div class="">
+                  <ul class="menu-ul">
+                    <li class="py-2"><strong>Trending Now</strong></li>
+                    <li>Spring</li>
+                    <li>Women's History Month</li>
+                    <li>Easter</li>
+                    <li>Motivational & Inspirational</li>
+                    <li>Memes</li>
+                  </ul>
+                </div>
+                <div class="">
+                  <ul class="menu-ul">
+                    <li class="py-2"><strong>Marketing</strong></li>
+                    <li>Sales & Promotions</li>
+                    <li>Short Ads</li>
+                    <li>Slideshows</li>
+                  </ul>
+                </div>
+                <div class="">
+                  <ul class="menu-ul">
+                    <li class="py-2"><strong>Industries</strong></li>
+                    <li>Real Estate</li>
+                    <li>Health & Fitness</li>
+                    <li>Beauty & Care</li>
+                    <li>Food & Drink</li>
+                    <li>E-commerce & Retail</li>
+                    <li>Recruiting & HR</li>
+                    <li>Education</li>
+                  </ul>
+                </div>
+                <div class="">
+                  <ul class="menu-ul">
+                    <li class="py-2"><strong> Social Media</strong></li>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>TikTok</li>
+                    <li>YouTube</li>
+                    <li>Stories</li>
+                  </ul>
+                </div>
+
+                <div class="">
+                  <ul class="menu-ul">
+                    <li class="py-2"><strong>Formats</strong></li>
+                    <li>Meme Videos</li>
+                    <li>6 Second Videos</li>
+                    <li>YouTube Intros</li>
+                    <li>Listicles</li>
+                    <li>Inspirational & Quotes</li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div (mouseleave)="collapse3.toggle()">
+      <div class="position-relative  px-1 pt-3 ">
+        <p class="">
+          <button type="button" class="d-flex btn btn-link text-decoration-none text-dark txt-bg"
+            (mouseenter)="collapse3.toggle()"  [attr.aria-expanded]="!isCollapsed3"
+            aria-controls="collapseExample">
+            <span>Tools</span> <span class="rotate-arrow "><i class="bi bi-chevron-down"></i></span> 
+          </button>
+        </p>
+      </div>
+      <div class="position-absolute w-100 toggle-item">
+        <div #collapse3="ngbCollapse" [(ngbCollapse)]="isCollapsed3">
+          <div class="d-flex card">
+            <div class="">
+              <div class="d-flex menu-item-m">
+                <div class="">
+                  <ul class="menu-ul">
+                    <li class="py-2"><strong>Video Maker</strong></li>
+                    <li>Online Video Maker</li>
+                    <li>Slideshow Maker</li>
+                    <li>YouTube Intro Maker</li>
+                    <li>Lyric Video Maker</li>
+                    <li>Video Ad Maker</li>
+                    <li>All Tools</li>
+                  </ul>
+                </div>
+                <div class="">
+                  <ul class="menu-ul">
+                    <li class="py-2"><strong>Video Editor</strong></li>
+                    <li>Online Video Editor</li>
+                    <li>Add Audio to Video</li>
+                    <li>Online Video Cutter</li>
+                    <li>Online MP4 Editor</li>
+                    <li>Video Compressor</li>
+                    <li>Add Text to Video</li>
+                  </ul>
+                </div>
+                <div class="">
+                  <ul class="menu-ul">
+                    <li class="py-2"><strong>Photos</strong></li>
+                    <li>Image Resizer</li>
+                    <li>Free Online Collage Maker</li>
+                    <li>Photos to Video Maker</li>
+                    <li>YouTube Thumbnail Maker</li>
+                    <li>Montage Maker</li>
+                    <li>Meme Maker</li>
+                    
+                  </ul>
+                </div>
+                <div class="">
+                  <ul class="menu-ul">
+                    <li class="py-2"><strong>GIF</strong></li>
+                    <li>Video to GIF Maker</li>
+                    <li>Add Text to GIF</li>
+                    <li>GIF Editor</li>
+                    <li>Happy Birthday GIF</li>
+                    <li>Merry Christmas GIF</li>
+                  </ul>
+                </div>
+
+                <div class="">
+                  <ul class="menu-ul">
+                    <li class="py-2"><strong>More</strong></li>
+                    <li>Social Media Calendar</li>
+                    <li>Video Production Cost Estimator</li>
+                    <li>Facebook Ad Budget Calculator</li>
+                    <li>Facebook Ads Troubleshooter</li>
+                    <li>YouTube Money Calculator</li>
+                    <li>Promo Marketing Ebook</li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div (mouseleave)="collapse4.toggle()">
+      <div class="position-relative  px-1 pt-3 ">
+        <p class="">
+          <button type="button" class="d-flex btn btn-link text-decoration-none text-dark txt-bg"
+            (mouseenter)="collapse4.toggle()"  [attr.aria-expanded]="!isCollapsed4"
+            aria-controls="collapseExample">
+             <span>Resources</span> <span class="rotate-arrow "><i class="bi bi-chevron-down"></i></span> 
+          </button>
+        </p>
+      </div>
+      <div class="position-absolute w-100 toggle-item">
+        <div #collapse4="ngbCollapse" [(ngbCollapse)]="isCollapsed4">
+          <div class="d-flex card">
+            <div class="">
+              <div class="d-flex menu-item-m">
+                <div class="">
+                  <ul class="menu-ul">
+                    <li class="py-2"><strong>Learn</strong></li>
+                    <li>Blog</li>
+                    <li>Promo Academy</li>
+                    <li>Knowledge base</li>
+                    <li>FAQ</li>
+                    
+                  </ul>
+                </div>
+                <div class="">
+                  <ul class="menu-ul">
+                    <li class="py-2"><strong>Tips & Tutorials</strong></li>
+                    <li>Video Marketing 101</li>
+                    <li>How to create winning videos</li>
+                    <li>7 Things You Could Do With Promo</li>
+                    <li>How to Add Music to a Video</li>
+                    <li>How to Add Subtitles to a Video</li>
+                    <li>The Complete Guide to Video Aspect Ratios</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div>
+      <div class="position-relative  px-1 pt-3 ">
+        <p class="">
+          <button type="button" class="btn btn-link text-decoration-none text-dark txt-bg"
+            
+            aria-controls="collapseExample">
+            Calendar 
+          </button>
+        </p>
+      </div>      
+    </div>
+
+    <div>
+      <div class="position-relative  px-1 pt-3 ">
+        <p class="">
+          <button type="button" class="btn btn-link text-decoration-none text-dark txt-bg"
+            
+            aria-controls="collapseExample">
+            Pricing
+          </button>
+        </p>
+      </div>      
+    </div>
+
+
+
+    <div class="d-flex text-end  btn-login  ">
+      <div class="mx-3 text-center my-auto">
+        <a href="" class="text-decoration-none text-dark txt-bg">Login</a>
+      </div>
+      <div class="mx-1 my-3">
+        <button class="rounded-pill py-2 px-4 border-1 try-bg-change">Try for me</button>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="first-container-div-pt">
+    <div class="position-relative">
+      <video class="w-100 vidoe-big-scr" src="//ak02-video-cdn.slidely.com/static/promo-videos/promo-com/promo.com_BG_v2.webm"
+        muted="muted" loop="loop" autoplay="autoplay" playsinline=""></video>
+        <video class="w-100 d-none vidoe-mid-scr" src="//ak02-video-cdn.slidely.com/static/promo-videos/promo-com/promo.com_BG_tablet_v2.webm"
+        muted="muted" loop="loop" autoplay="autoplay" playsinline=""></video>        
+
+      <div class="d-flex position-absolute main-video-content border">
+        <span class="text-center text-white m-auto  border">
+          <div class="">
+            <span class="d-flex  main-video-content-head ">
+              <p> The only video <span class="break"></span> maker you need</p>
+            </span>
+          </div>
+          <div>
+            <h6 class="sub-heading">Join millions of businesses creating videos in minutes. Use unlimited media from
+              iStock and Getty Images!</h6>
+          </div>
+          <div class="mt-4">
+            <button class="rounded-pill  py-3 px-5 border-0 text-white slide-tot-div"><span class="px-3">Try for
+                free</span></button>
+          </div>
+          <div class="mt-4 text-white">
+            <span>Excellent <span class="star-icons"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                  class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                  class="bi bi-star-fill"></i></span><span><i class="bi bi-star-fill"></i></span> Trustpilot</span>
+          </div>
+          <div class="d-flex text-white  text-center justify-content-center mt-4">
+            <div><i class="bi bi-play-circle play-icon-custom"></i></div>
+            <div class="py-2 px-3">
+              <p>what is promo?</p>
+            </div>
+          </div>
+        </span>
+      </div>
+    </div>
+  </div>
+  
+  <!-- <div class="first-container-div-pt">
+    <div class="position-relative">
+      <video class="w-100 vidoe-big-scr" src="//ak02-video-cdn.slidely.com/static/promo-videos/promo-com/promo.com_BG_v2.webm"
+        muted="muted" loop="loop" autoplay="autoplay" playsinline=""></video>
+        <video class="w-100 d-none vidoe-mid-scr" src="//ak02-video-cdn.slidely.com/static/promo-videos/promo-com/promo.com_BG_tablet_v2.webm"
+        muted="muted" loop="loop" autoplay="autoplay" playsinline=""></video>        
+
+      <div class="d-flex position-absolute main-video-content border">
+        <span class="text-center text-white m-auto  border">
+          <div class="">
+            <span class="d-flex  main-video-content-head ">
+              <p> The only video <span class="break"></span> maker you need</p>
+            </span>
+          </div>
+          <div>
+            <h6 class="sub-heading">Join millions of businesses creating videos in minutes. Use unlimited media from
+              iStock and Getty Images!</h6>
+          </div>
+          <div class="mt-4">
+            <button class="rounded-pill  py-3 px-5 border-0 text-white slide-tot-div"><span class="px-3">Try for
+                free</span></button>
+          </div>
+          <div class="mt-4 text-white">
+            <span>Excellent <span class="star-icons"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                  class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                  class="bi bi-star-fill"></i></span><span><i class="bi bi-star-fill"></i></span> Trustpilot</span>
+          </div>
+          <div class="d-flex text-white  text-center justify-content-center mt-4">
+            <div><i class="bi bi-play-circle play-icon-custom"></i></div>
+            <div class="py-2 px-3">
+              <p>what is promo?</p>
+            </div>
+          </div>
+        </span>
+      </div>
+    </div>
+  </div> -->
+
+
+
+  <div class="container first-container-div-pt  ourparterns">
+    <div class="d-flex  justify-content-between mt-2 mb-2 ">
+      <div class="col">
+        <span class="our-partner">Our partners:</span>
+      </div>
+      <div class="col">
+        <img class="img-fluid imgs" src="assets/images/fb.svg">
+      </div>
+      <div class="col">
+        <img class="img-fluid" src="assets/images/instagram.png">
+      </div>
+      <div class="col">
+        <img class="img-fluid" src="assets/images/youtube.png">
+      </div>
+      <div class="col">
+        <img class="img-fluid" src="assets/images/gettty.png">
+      </div>
+      <div class="col">
+        <img class="img-fluid" src="assets/images/best.png">
+      </div>
+      <div class="col">
+        <img class="img-fluid" src="assets/images/tripble.png">
+      </div>
+    </div>
+  </div>
+
+  <div class="container first-container-div-pt ourparterns-1 d-none">
+    <div class="d-flex flex-column  mt-2 mb-2 ">
+    <div class="justify-content-around py-4">
+      <div class="text-center">
+        <span class="our-partner ">Our partners:</span>
+      </div>
+    </div>
+    <div class="d-flex  py-4 ">
+      <div class="col text-center">
+        <img class="img-fluid w-50 imgs" src="assets/images/fb.svg">
+      </div>
+      <div class="col text-center">
+        <img class="img-fluid w-50" src="assets/images/instagram.png">
+      </div>
+      <div class="col text-center">
+        <img class="img-fluid w-50" src="assets/images/youtube.png">
+      </div>
+    </div>
+    <div class="d-flex py-4">
+      <div class="col text-center">
+        <img class="img-fluid w-50" src="assets/images/gettty.png">
+      </div>
+      <div class="col text-center">
+        <img class="img-fluid w-50" src="assets/images/best.png">
+      </div>
+      <div class="col text-center">
+        <img class="img-fluid w-50" src="assets/images/tripble.png">
+      </div>
+    </div>
+        
+    </div>
+  </div>
+
+  <div class="border-bottom">
+
+  </div>
+
+  
+
+
+
+
+
+
+  <div class="container">
+    <div class="d-flex row flex-sm-row-reverse  justify-content-between">
+      <div class="col-lg-6 col-md-12 ">
+        <img class="img-fluid" src="assets/images/lottie-img1.jfif">
+      </div>
+      <div class="col-lg-5 col-md-12 my-auto content-txt ">
+        <h1><strong>Power your business <span class="d-block"></span>with unlimited videos</strong></h1>
+        <p class="para-txt">Bring any idea to life in minutes - by yourself. Easily create compelling video ads, social
+          media videos, product videos, explainer videos and more. The perfect solution for giving your brand a voice at
+          scale.</p>
+        <button class="rounded-pill text-light bg-dark py-2 px-4 my-2 ">Try for free</button>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="d-flex grid-two justify-content-between">
+      <div class="col-lg-6 col-md-12 col-sm-12 justify-content-sm-center">
+        <img class="img-fluid" src="assets/images/lottie-img2.jfif">
+      </div>
+      <div class="col-lg-5 col-md-12 col-am-12 my-auto content-txt">
+        <h1><strong>Engage followers<span class="d-block"></span>with editorial content</strong></h1>
+        <p class="para-txt">Access scroll-stopping footage covering the latest real-time events, shows, trends,
+          celebrities, fashion, news and more. Never miss a social media opportunity again.</p>
+        <button class="rounded-pill text-light bg-dark py-2 px-4">Sign up today</button>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="d-flex row flex-sm-row-reverse justify-content-between">
+      <div class="col-lg-6 col-md-12 justify-content-sm-center position-relative">
+        <img class="img-fluid" src="assets/images/lottie-img3.png">
+        <img class="img-fluid position-absolute top-0 start-0" src="assets/images/lottie-img3-1.png">
+      </div>
+      <div class="col-lg-5 col-md-12 my-auto content-txt">
+        <h1><strong>Stay up to speed on<span class="d-block"></span>social media</strong></h1>
+        <p class="para-txt">Say goodbye to long video production times and hello to smart and easy video creation. Our
+          platform combines an award-winning video maker with access to over 100M premium photos and videos from Getty
+          Images and iStock.</p>
+        <button class="rounded-pill text-light bg-dark py-2 px-4">Get started</button>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="d-flex row grid-two justify-content-between">
+      <div class="col-lg-6 col-md-12 justify-content-sm-center ">
+        <img class="img-fluid" src="assets/images/lottie-img4.jfif">
+      </div>
+      <div class="col-lg-5 col-md-12 my-auto content-txt">
+        <h1><strong>Save time with<span class="d-block"></span>our templates</strong></h1>
+        <p class="para-txt">From holidays to fun social media trends and industry specific events – Promo’s creative
+          team has got your content covered. Enjoy unlimited access to thousands of ready-made templates. Quickly match
+          each video to fit your brand’s style by adding your logo, colors and fonts.</p>
+        <button class="rounded-pill text-light bg-dark py-2 px-4">Choose a template</button>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="d-flex row flex-sm-row-reverse justify-content-between">
+      <div class="col-lg-6 col-md-12 text-center">
+        <img class="img-fluid" src="assets/images/lottie-img5.jfif">
+      </div>
+      <div class="col-lg-5 col-md-12 my-auto content-txt ">
+        <h1><strong>Feel secure with our<span class="d-block"></span>24/7 customer support</strong></h1>
+        <p class="para-txt">When you’re a part of Promo, you are never alone. You can rely on our 5-star customer
+          support team for all of your technical and video needs. Anytime, anywhere.</p>
+        <button class="rounded-pill text-light bg-dark py-2 px-4">Let's go</button>
+      </div>
+    </div>
+  </div>
+  <div class="purple-content">
+    <div class="container">
+      <div class="d-flex row justify-content-between pt-4">
+        <div class="col-lg-6 col-md-6 col-sm-12 my-auto typewriter ">
+          <h2 class="text-light">What can I do with Promo:</h2>
+          <h1 class="text-light">
+            <ngtypewriter [StringList]='typeWritterList' [speed]='500'></ngtypewriter>
+          </h1>
+        </div>
+        <div class="col-lg-4 col-sm-12 position-relative my-4">
+          <img class="img-fluid " src="assets/images/purple-1.png ">
+          <img class="img-fluid position-absolute top-0 start-0 " src="assets/images/purple-2.png">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container pt-3">
+    <div class="d-flex row pt-5 mt-3 justify-content-between">
+      <div class="col-lg-6 col-md-12 col-sm-12 img-left-txt">
+        <h5 class="">Explore our massive <strong>Facebook ad creator</strong> template library</h5>
+      </div>
+      <div class="col-lg-6 col-md-12 col-sm-12  img-right-txt text-end">
+        <a href="" class="text-dark">View all Facebook ad templates</a>
+      </div>
+    </div>
+    <div class="d-flex row pt-3 justify-content-between pb-5">
+      <div class="col-lg-3 col-md-6 col-sm-6 p-3">
+        <div class="position-relative box-imgs">
+          <video class="w-100 " loop="" preload="auto">
+            <source type="video/mp4" src="https://ak01-video-cdn.slidely.com/static/promo-videos/hp/videos/square1.mp4">
+          </video>
+          <div class="position-absolute  overlay-div d-none">
+            <div class="overlay-btn-div ">
+              <button
+                class="rounded-pill py-1 px-4 bg-transparent text-light mb-1 border-white border-1">Preview</button><span
+                class="d-block"></span>
+              <button class="rounded-pill py-1 px-3 text-light border-white mt-1  border-1 customize">Customize</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 p-3">
+        <div class="position-relative box-imgs">
+          <video class="w-100" loop="" preload="auto" muted="">
+            <source type="video/mp4" src="https://ak01-video-cdn.slidely.com/static/promo-videos/hp/videos/square2.mp4">
+          </video>
+          <div class="position-absolute  overlay-div d-none">
+            <div class="overlay-btn-div ">
+              <button
+                class="rounded-pill py-1 px-4 bg-transparent text-light mb-1 border-white border-1">Preview</button><span
+                class="d-block"></span>
+              <button class="rounded-pill py-1 px-3 text-light border-white mt-1  border-1 customize">Customize</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 p-3">
+        <div class="position-relative box-imgs">
+          <video class="w-100" loop="" preload="auto" muted="">
+            <source type="video/mp4" src="https://ak01-video-cdn.slidely.com/static/promo-videos/hp/videos/square3.mp4">
+          </video>
+          <div class="position-absolute  overlay-div d-none">
+            <div class="overlay-btn-div ">
+              <button
+                class="rounded-pill py-1 px-4 bg-transparent text-light mb-1 border-white border-1">Preview</button><span
+                class="d-block"></span>
+              <button class="rounded-pill py-1 px-3 text-light border-white mt-1  border-1 customize">Customize</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 p-3">
+        <div class="position-relative box-imgs">
+          <video class="w-100" loop="" preload="auto" muted="">
+            <source type="video/mp4" src="https://ak01-video-cdn.slidely.com/static/promo-videos/hp/videos/square4.mp4">
+          </video>
+          <div class="position-absolute  overlay-div d-none">
+            <div class="overlay-btn-div ">
+              <button
+                class="rounded-pill py-1 px-4 bg-transparent text-light mb-1 border-white border-1">Preview</button><span
+                class="d-block"></span>
+              <button class="rounded-pill py-1 px-3 text-light border-white mt-1  border-1 customize">Customize</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-12 col-sm-12  img-right-txt-alter d-none  text-center">
+        <a href="" class="text-dark">View all Facebook ad templates</a>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="d-flex row pt-3 mt-1 justify-content-between">
+      <div class="col-lg-6 col-md-12 col-sm-12 img-left-txt">
+        <h5 class="">Create a story in seconds with these prebuilt <strong>Instagram story templates</strong></h5>
+      </div>
+      <div class="col-lg-6 col-md-12 col-sm-12  img-right-txt text-end">
+        <a href="" class="text-dark">View all Instagram story templates</a>
+      </div>
+    </div>
+    <div class="d-flex row pt-3 justify-content-between pb-5">
+      <div class="col-lg-3 col-md-6 col-sm-6 p-3 ">
+        <div class="position-relative box-imgs ">
+          <video class="w-100" loop="" preload="auto" muted="">
+            <source type="video/mp4"
+              src="https://ak03-video-cdn.slidely.com/static/promo-videos/hp/videos/vertical1.mp4"></video>
+          <div class="position-absolute  overlay-div d-none">
+            <div class="overlay-btn-div-instagram ">
+              <button
+                class="rounded-pill py-1 px-4 bg-transparent text-light mb-1 border-white border-1">Preview</button><span
+                class="d-block"></span>
+              <button class="rounded-pill py-1 px-3 text-light border-white mt-1  border-1 customize">Customize</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 p-3 ">
+        <div class="position-relative box-imgs">
+          <video class="w-100" loop="" preload="auto" muted="">
+            <source type="video/mp4"
+              src="https://ak03-video-cdn.slidely.com/static/promo-videos/hp/videos/vertical2.mp4"></video>
+          <div class="position-absolute  overlay-div d-none">
+            <div class="overlay-btn-div-instagram ">
+              <button
+                class="rounded-pill py-1 px-4 bg-transparent text-light mb-1 border-white border-1">Preview</button><span
+                class="d-block"></span>
+              <button class="rounded-pill py-1 px-3 text-light border-white mt-1  border-1 customize">Customize</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 p-3 ">
+        <div class="position-relative box-imgs">
+          <video class="w-100" loop="" preload="auto" muted="">
+            <source type="video/mp4"
+              src="https://ak03-video-cdn.slidely.com/static/promo-videos/hp/videos/vertical3.mp4"></video>
+          <div class="position-absolute  overlay-div d-none">
+            <div class="overlay-btn-div-instagram ">
+              <button
+                class="rounded-pill py-1 px-4 bg-transparent text-light mb-1 border-white border-1">Preview</button><span
+                class="d-block"></span>
+              <button class="rounded-pill py-1 px-3 text-light border-white mt-1  border-1 customize">Customize</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 p-3  ">
+        <div class="position-relative box-imgs">
+          <video class="w-100" loop="" preload="auto" muted="">
+            <source type="video/mp4"
+              src="https://ak03-video-cdn.slidely.com/static/promo-videos/hp/videos/vertical4.mp4"></video>
+          <div class="position-absolute  overlay-div d-none">
+            <div class="overlay-btn-div-instagram ">
+              <button
+                class="rounded-pill py-1 px-4 bg-transparent text-light mb-1 border-white border-1">Preview</button><span
+                class="d-block"></span>
+              <button class="rounded-pill py-1 px-3 text-light border-white mt-1  border-1 customize">Customize</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-12 col-sm-12  img-right-txt-alter d-none  text-center">
+        <a href="" class="text-dark">Instagram story templates</a>
+      </div>
+    </div>
+  </div>
+  <div class="container ">
+    <div class="d-flex row pt-5 mt-3 justify-content-between">
+      <div class="col-lg-6 col-md-12 col-sm-12 img-left-txt">
+        <h5 class="">Make an impression with our <strong>YouTube intro templates</strong></h5>
+      </div>
+      <div class="col-lg-6 col-md-12 col-sm-12  img-right-txt text-end">
+        <a href="" class="text-dark">View all YouTube intro templates</a>
+      </div>
+    </div>
+    <div class="d-flex row pt-3 justify-content-between pb-5">
+      <div class="col-lg-3 col-md-6 col-sm-6 p-3">
+        <div class="position-relative box-imgs">
+          <video class="w-100" loop="" preload="auto" muted="">
+            <source type="video/mp4" src="https://ak01-video-cdn.slidely.com/static/promo-videos/hp/videos/wide1.mp4">
+          </video>
+          <div class="position-absolute  overlay-div d-none">
+            <div class="overlay-btn-div-youtube">
+              <button
+                class="rounded-pill py-1 px-4 bg-transparent text-light mb-1 border-white border-1">Preview</button><span
+                class="d-block"></span>
+              <button class="rounded-pill py-1 px-3 text-light border-white mt-1  border-1 customize">Customize</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 p-3">
+        <div class="position-relative box-imgs">
+          <video class="w-100" loop="" preload="auto" muted="">
+            <source type="video/mp4" src="https://ak01-video-cdn.slidely.com/static/promo-videos/hp/videos/wide2.mp4">
+          </video>
+          <div class="position-absolute  overlay-div d-none">
+            <div class="overlay-btn-div-youtube">
+              <button
+                class="rounded-pill py-1 px-4 bg-transparent text-light mb-1 border-white border-1">Preview</button><span
+                class="d-block"></span>
+              <button class="rounded-pill py-1 px-3 text-light border-white mt-1  border-1 customize">Customize</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 p-3">
+        <div class="position-relative box-imgs">
+          <video class="w-100" loop="" preload="auto" muted="">
+            <source type="video/mp4" src="https://ak01-video-cdn.slidely.com/static/promo-videos/hp/videos/wide3.mp4">
+          </video>
+          <div class="position-absolute  overlay-div d-none">
+            <div class="overlay-btn-div-youtube">
+              <button
+                class="rounded-pill py-1 px-4 bg-transparent text-light mb-1 border-white border-1">Preview</button><span
+                class="d-block"></span>
+              <button class="rounded-pill py-1 px-3 text-light border-white mt-1  border-1 customize">Customize</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 p-3">
+        <div class="position-relative box-imgs">
+          <video class="w-100" loop="" preload="auto" muted="">
+            <source type="video/mp4" src="https://ak01-video-cdn.slidely.com/static/promo-videos/hp/videos/wide4.mp4">
+          </video>
+          <div class="position-absolute  overlay-div d-none">
+            <div class="overlay-btn-div-youtube">
+              <button
+                class="rounded-pill py-1 px-4 bg-transparent text-light mb-1 border-white border-1">Preview</button><span
+                class="d-block"></span>
+              <button class="rounded-pill py-1 px-3 text-light border-white mt-1  border-1 customize">Customize</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-12 col-sm-12  img-right-txt-alter d-none  text-center">
+        <a href="" class="text-dark">View all YouTube intro templates</a>
+      </div>
+    </div>
+  </div>
+  <div class="container ">
+    <div class="d-flex row pt-5 mt-3 justify-content-between">
+      <div class="col-lg-6 col-md-12 col-sm-12 img-left-txt">
+        <h5 class="">Videos to amaze your audience's<strong>Instagram feed</strong></h5>
+      </div>
+      <div class="col-lg-6 col-md-12 col-sm-12  img-right-txt text-end">
+        <a href="" class="text-dark">View all Instagram feed templates</a>
+      </div>
+    </div>
+    <div class="d-flex row pt-3 justify-content-between pb-5">
+      <div class="col-lg-3 col-md-6 col-sm-6 p-3">
+        <div class="position-relative box-imgs">
+          <video class="w-100 " loop="" preload="auto">
+            <source type="video/mp4" src="https://ak01-video-cdn.slidely.com/static/promo-videos/hp/videos/square5.mp4">
+          </video>
+          <div class="position-absolute  overlay-div d-none">
+            <div class="overlay-btn-div ">
+              <button
+                class="rounded-pill py-1 px-4 bg-transparent text-light mb-1 border-white border-1">Preview</button><span
+                class="d-block"></span>
+              <button class="rounded-pill py-1 px-3 text-light border-white mt-1  border-1 customize">Customize</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 p-3">
+        <div class="position-relative box-imgs">
+          <video class="w-100" loop="" preload="auto" muted="">
+            <source type="video/mp4" src="https://ak01-video-cdn.slidely.com/static/promo-videos/hp/videos/square6.mp4">
+          </video>
+          <div class="position-absolute  overlay-div d-none">
+            <div class="overlay-btn-div ">
+              <button
+                class="rounded-pill py-1 px-4 bg-transparent text-light mb-1 border-white border-1">Preview</button><span
+                class="d-block"></span>
+              <button class="rounded-pill py-1 px-3 text-light border-white mt-1  border-1 customize">Customize</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 p-3">
+        <div class="position-relative box-imgs">
+          <video class="w-100" loop="" preload="auto" muted="">
+            <source type="video/mp4" src="https://ak01-video-cdn.slidely.com/static/promo-videos/hp/videos/square7.mp4">
+          </video>
+          <div class="position-absolute  overlay-div d-none">
+            <div class="overlay-btn-div ">
+              <button
+                class="rounded-pill py-1 px-4 bg-transparent text-light mb-1 border-white border-1">Preview</button><span
+                class="d-block"></span>
+              <button class="rounded-pill py-1 px-3 text-light border-white mt-1  border-1 customize">Customize</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 p-3">
+        <div class="position-relative box-imgs">
+          <video class="w-100" loop="" preload="auto" muted="">
+            <source type="video/mp4" src="https://ak02-video-cdn.slidely.com/static/promo-videos/hp/videos/square8.mp4">
+          </video>
+          <div class="position-absolute  overlay-div d-none">
+            <div class="overlay-btn-div ">
+              <button
+                class="rounded-pill py-1 px-4 bg-transparent text-light mb-1 border-white border-1">Preview</button><span
+                class="d-block"></span>
+              <button class="rounded-pill py-1 px-3 text-light border-white mt-1  border-1 customize">Customize</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-12 col-sm-12  img-right-txt-alter d-none  text-center">
+        <a href="" class="text-dark">View all Instagram feed templates</a>
+      </div>
+    </div>
+    <div class="text-center mb-3">
+      <button class="rounded-pill text-light bg-dark py-2 px-4 ">Choose a template</button>
+    </div>
+  </div>
+  <div class="video-maker my-2 p-2">
+    <div class="container ">
+      <div class="d-flex row pt-5 mt-3 justify-content-between">
+        <div class="col-12 text-center my-5">
+          <h2 class=""><strong>Video Maker For Every Business Type</strong></h2>
+        </div>
+      </div>
+      <div class="d-flex row pt-3 justify-content-between pb-5">
+        <div class="col-lg-3 col-md-6 col-sm-6 p-3">
+          <div class="position-relative box-imgs">
+            <img class="w-100 rounded"
+              src="https://ak03-promo-cdn.slidely.com/images/promoVideos/video-maker-homepage/small_business.jpg">
+            <div class="position-absolute  overlay-div-business-content  d-none">
+              <div class="overlay-btn-div-business">
+                <button class="rounded-pill py-1 px-4 bg-transparent text-light mb-1 border-white border-1">See
+                  Template</button><span class="d-block"></span>
+              </div>
+            </div>
+          </div>
+          <div class="text-center my-3">
+            <h5><strong>Small Businesses</strong></h5>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 p-3">
+          <div class="position-relative box-imgs">
+            <img class="w-100 rounded"
+              src="https://ak02-promo-cdn.slidely.com/images/promoVideos/video-maker-homepage/marketing.jpg">
+            <div class="position-absolute  overlay-div-business-content d-none">
+              <div class="overlay-btn-div-business">
+                <button class="rounded-pill py-1 px-4 bg-transparent text-light mb-1 border-white border-1">See
+                  Template</button><span class="d-block"></span>
+              </div>
+            </div>
+          </div>
+          <div class="text-center my-3">
+            <h5><strong>Marketing Agencies</strong></h5>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 p-3">
+          <div class="position-relative box-imgs">
+            <img class="w-100 rounded"
+              src="https://ak04-promo-cdn.slidely.com/images/promoVideos/video-maker-homepage/real_estate.jpg">
+            <div class="position-absolute  overlay-div-business-content d-none">
+              <div class="overlay-btn-div-business">
+                <button class="rounded-pill py-1 px-4 bg-transparent text-light mb-1 border-white border-1">See
+                  Template</button><span class="d-block"></span>
+              </div>
+            </div>
+          </div>
+          <div class="text-center my-3">
+            <h5><strong>Real Estate Agencies</strong></h5>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 p-3">
+          <div class="position-relative box-imgs">
+            <img class="w-100 rounded"
+              src="https://ak02-promo-cdn.slidely.com/images/promoVideos/video-maker-homepage/ecommerce_stores.jpg">
+            <div class="position-absolute  overlay-div-business-content d-none">
+              <div class="overlay-btn-div-business">
+                <button class="rounded-pill py-1 px-4 bg-transparent text-light mb-1 border-white border-1">See
+                  Template</button><span class="d-block"></span>
+              </div>
+            </div>
+          </div>
+          <div class="text-center my-3">
+            <h5><strong>eCommerce Stores</strong></h5>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12  img-right-txt-alter d-none  text-center">
+          <a href="" class="text-dark">View all YouTube intro templates</a>
+        </div>
+      </div>
+    </div>
+    <div class="container ">
+      <div class="d-flex row  justify-content-between pb-2">
+        <div class="col-lg-3 col-md-6 col-sm-6 p-3">
+          <div class="position-relative box-imgs">
+            <img class="w-100 rounded"
+              src="https://ak02-promo-cdn.slidely.com/images/promoVideos/video-maker-homepage/restaurants.jpg">
+            <div class="position-absolute  overlay-div-business-content d-none">
+              <div class="overlay-btn-div-business ">
+                <button class="rounded-pill py-1 px-4 bg-transparent text-light mb-1 border-white border-1">See
+                  Template</button><span class="d-block"></span>
+              </div>
+            </div>
+          </div>
+          <div class="text-center my-3">
+            <h5><strong>Restaurants</strong></h5>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 p-3">
+          <div class="position-relative box-imgs">
+            <img class="w-100 rounded"
+              src="https://ak04-promo-cdn.slidely.com/images/promoVideos/video-maker-homepage/education.jpg">
+            <div class="position-absolute  overlay-div-business-content d-none">
+              <div class="overlay-btn-div-business ">
+                <button class="rounded-pill py-1 px-4 bg-transparent text-light mb-1 border-white border-1">See
+                  Template</button><span class="d-block"></span>
+              </div>
+            </div>
+          </div>
+          <div class="text-center my-3">
+            <h5><strong>Education</strong></h5>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 p-3">
+          <div class="position-relative box-imgs">
+            <img class="w-100 rounded"
+              src="https://ak03-promo-cdn.slidely.com/images/promoVideos/video-maker-homepage/recruiters.jpg">
+            <div class="position-absolute  overlay-div-business-content d-none">
+              <div class="overlay-btn-div-business ">
+                <button class="rounded-pill py-1 px-4 bg-transparent text-light mb-1 border-white border-1">See
+                  Template</button><span class="d-block"></span>
+              </div>
+            </div>
+          </div>
+          <div class="text-center my-3">
+            <h5><strong>Recruiters</strong></h5>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 p-3">
+          <div class="position-relative box-imgs">
+            <img class="w-100 rounded"
+              src="https://ak04-promo-cdn.slidely.com/images/promoVideos/video-maker-homepage/education.jpg">
+            <div class="position-absolute  overlay-div-business-content d-none">
+              <div class="overlay-btn-div-business">
+                <button class="rounded-pill py-1 px-4 bg-transparent text-light mb-1 border-white border-1">See
+                  Template</button><span class="d-block"></span>
+              </div>
+            </div>
+          </div>
+          <div class="text-center my-3">
+            <h5><strong>SaaS Companies</strong></h5>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12  img-right-txt-alter d-none  text-center">
+          <a href="" class="text-dark">View all YouTube intro templates</a>
+        </div>
+      </div>
+    </div>
+    <div class="text-center">
+      <button class="rounded-pill text-light bg-dark py-2 px-4">Try for free</button>
+    </div>
+  </div>
+
+
+
+  <div class="container trusted">
+    <div class="d-flex justify-content-between  py-4 ">
+      <div class="col text-center my-auto">
+        <h5>Trusted by:</h5>
+      </div>
+      <span class="d-block"></span>
+      <div class="col text-center my-auto">
+        <img class="img-fluid footer-nav-icon" width="50" src="assets/images/bottom-logo-2.png">
+      </div>
+      <div class="col text-center my-auto">
+        <img class="img-fluid footer-nav-icon" width="50" src="assets/images/bottom-logo-3.png">
+      </div>
+      <div class="col text-center my-auto">
+        <img class="img-fluid footer-nav-icon" width="50" src="assets/images/bottom-logo-4.png">
+      </div>
+      <div class="col text-center my-auto">
+        <img class="img-fluid footer-nav-icon" width="25" src="assets/images/bottom-logo-5.png">
+      </div>
+      <div class="col text-center my-auto">
+        <img class="img-fluid footer-nav-icon" width="50" src="assets/images/bottom-logo-6.png">
+      </div>
+      <div class="col text-center my-auto">
+        <img class="img-fluid footer-nav-icon" width="50" src="assets/images/bottom-logo-7.png">
+      </div>
+      <div class="col text-center my-auto">
+        <img class="img-fluid footer-nav-icon" width="50" src="assets/images/bottom-logo-8.png">
+      </div>
+      <div class="col text-center my-auto">
+        <img class="img-fluid footer-nav-icon" width="50" src="assets/images/bottom-logo-9.png">
+      </div>
+      <div class="col text-center my-auto">
+        <img class="img-fluid footer-nav-icon" width="50" src="assets/images/bottom-logo-10.png">
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container trusted-1 d-none">
+    <div class="d-flex flex-column y-4 ">
+      <div class="">
+        <div class="text-center my-auto">
+          <h5>Trusted by:</h5>
+        </div>
+      </div>
+      <div class="d-flex">
+        <div class="col text-center my-auto">
+          <img class="img-fluid w-50 footer-nav-icon" width="50" src="assets/images/bottom-logo-2.png">
+        </div>
+        <div class="col text-center my-auto">
+          
+          <img class="img-fluid w-50 footer-nav-icon" width="50" src="assets/images/bottom-logo-9.png">
+        </div>
+        <div class="col text-center my-auto">
+          
+          <img class="img-fluid w-50 footer-nav-icon" width="25" src="assets/images/bottom-logo-5.png">
+        </div>
+      </div>
+
+      <div class="d-flex">
+        <div class="col text-center my-auto">
+          
+          <img class="img-fluid w-50 footer-nav-icon" width="50" src="assets/images/bottom-logo-3.png">
+        </div>
+        <div class="col text-center my-auto">
+          <img class="img-fluid w-50 footer-nav-icon" width="50" src="assets/images/bottom-logo-7.png">
+        </div>
+        <div class="col text-center my-auto">
+          
+          <img class="img-fluid w-50 footer-nav-icon" width="50" src="assets/images/bottom-logo-6.png">
+        </div>
+      </div>
+      
+      <div class="d-flex">
+        <div class="col text-center my-auto">          
+          <img class="img-fluid w-50 footer-nav-icon" width="50" src="assets/images/bottom-logo-4.png">
+        </div>
+        <div class="col text-center my-auto">
+          <img class="img-fluid w-50 footer-nav-icon" width="50" src="assets/images/bottom-logo-8.png">
+        </div>
+        <div class="col text-center my-auto">
+          <img class="img-fluid w-50 footer-nav-icon" width="50" src="assets/images/bottom-logo-10.png">
+        </div>
+      </div>
+      
+      
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+  <div class="slide-tot-div">
+    <div class="">
+      <div class="d-flex ">
+        <div class="col-3 ">
+          <img class="footer-nav-icon img-fluid" src="assets/images/shape1.svg">
+        </div>
+        <div class="col-6  text-center text-white m-auto">
+          <h1 class="text-white">What our customers think</h1>
+          <ngb-carousel [showNavigationArrows]="showNavigationArrows"
+            [showNavigationIndicators]="showNavigationIndicators">
+            <ng-template ngbSlide>
+              <div class="picsum-img-wrapper">
+                <p>I discovered Promo on my very first video and I saw a huge increase in engagement - 50 shares on
+                  Facebook, and nearly 10,000 views in the first week. Thanks, Promo, I am hooked. Read more</p>
+                <img class="rounded-circle" width="50" src="assets/images/slide1.jpg">
+                <p><strong>Dennis Yu</strong></p>
+                <p>Blitzmetrics</p>
+              </div>
+            </ng-template>
+            <ng-template ngbSlide>
+              <div class="picsum-img-wrapper">
+                <div class="picsum-img-wrapper">
+                  <p>I discovered Promo on my very first video and I saw a huge increase in engagement - 50 shares on
+                    Facebook, and nearly 10,000 views in the first week. Thanks, Promo, I am hooked. Read more</p>
+                  <img class="rounded-circle" width="50" src="assets/images/slide2.jpg">
+                  <p><strong>Dennis Yu</strong></p>
+                  <p>Blitzmetrics</p>
+                </div>
+              </div>
+            </ng-template>
+            <ng-template ngbSlide>
+              <div class="picsum-img-wrapper">
+                <div class="picsum-img-wrapper">
+                  <p>I discovered Promo on my very first video and I saw a huge increase in engagement - 50 shares on
+                    Facebook, and nearly 10,000 views in the first week. Thanks, Promo, I am hooked. Read more</p>
+                  <img class="rounded-circle" width="50" src="assets/images/slide3.jpg">
+                  <p><strong>Dennis Yu</strong></p>
+                  <p>Blitzmetrics</p>
+                </div>
+              </div>
+            </ng-template>
+          </ngb-carousel>
+        </div>
+        <div class="col-3  text-end">
+          <img class="footer-nav-icon img-fluid" src="assets/images/shape2.svg">
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!---footer-->
+  <div class="p-5 ">
+    <div class="d-flex footer">
+      <div class="col-lg-6 footer-main-menu">
+        <div class="d-flex row justify-content-end">
+          <div class="col-5 ">
+          </div>
+          <div class="col-4 ">
+            <p class="mar-left"><strong>COMPANY</strong></p>
+            <ul class="text-start foot-li">
+              <li>Pricing</li>
+              <li>About</li>
+              <li>Careers</li>
+              <li>News & Media</li>
+              <li>Affiliates</li>
+              <li>Write for Us</li>
+            </ul>
+            <p class="mar-left"><strong>PRODUCT</strong></p>
+            <ul class="text-start foot-li">
+              <li>Promo Video Maker</li>
+              <li>Commercial Maker</li>
+              <li>Social Media Video Maker</li>
+              <li>eCommerce Ads</li>
+              <li>Facebook Video Maker</li>
+              <li>Facebook Video Ad Creator</li>
+              <li>Facebook Story Ads</li>
+              <li>CInstagram Video Maker</li>
+              <li>Instagram Video Ad Maker</li>
+              <li>Instagram Story Ads</li>
+              <li>YouTube Video Maker</li>
+              <li>YouTube Ad Maker</li>
+              <li>YouTube Outro Maker</li>
+              <li>LinkedIn Video Ads</li>
+              <li>Twitter Video Ads</li>
+              <li>Amazon Video Ads</li>
+              <li>Real Estate Videos</li>
+              <li>Fitness Marketing Videos</li>
+              <li>Fashion Marketing Videos</li>
+              <li>Restaurant Videos</li>
+              <li>Beauty Marketing Videos</li>
+              <li>Travel Ads</li>
+              <li>Business</li>
+              <li>Nonprofit Videos</li>
+            </ul>
+          </div>
+          <div class="col-3">
+            <p class="mar-left"><strong>SUPPORT</strong></p>
+            <ul class="text-start foot-li">
+              <li>FAQ</li>
+              <li>Knowledge Base</li>
+              <li>Contact Us</li>
+              <li>Blog</li>
+            </ul>
+            <p class="mar-left"><strong>TOOLS</strong></p>
+            <ul class="text-start foot-li">
+              <li>All Tools</li>
+              <li>Photos to video maker</li>
+              <li>Online Video Maker</li>
+              <li>Video Ad Maker</li>
+              <li>Social Media Calendar</li>
+              <li>Image Resizer</li>
+              <li>Free Online Collage Maker</li>
+              <li>Facebook Video Covers</li>
+              <li>Video Production Cost Estimator</li>
+              <li>Facebook Ad Budget Calculator</li>
+              <li>Facebook Ads Troubleshooter</li>
+              <li>YouTube Money Calculator</li>
+              <li>MP4 Editor</li>
+              <li>Add Music to Video</li>
+              <li>Video to GIF Maker</li>
+              <li>Add Text to GIF</li>
+              <li>Video Editor for YouTube</li>
+              <li>Meme Maker</li>
+              <li>Birthday Video Maker</li>
+              <li>Online Video Cutter</li>
+              <li>Lyric Video Maker</li>
+              <li>Add Audio to Video</li>
+              <li>Add Text to Video</li>
+              <li>GIF Editor</li>
+              <li>Video Merger</li>
+              <li>Video Compressor</li>
+              <li>Video Resizer</li>
+              <li>Youtube Thumbnail Maker</li>
+              <li>Video Trimmer</li>
+              <li>Add Subtitles to Video</li>
+              <li>Montage Maker</li>
+              <li>Video Cropper</li>
+              <li>Slideshow Maker</li>
+              <li>TikTok Video Editor</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid col-md-12- col-sm-12 footer-small-scr-menu-accordion d-none   ">
+        <ngb-accordion [closeOthers]="true">
+          <ngb-panel id="static-1" title="COMPANY">
+            <ng-template ngbPanelContent>
+              <ul class="text-start foot-li p-0">
+                <li>Pricing</li>
+                <li>About</li>
+                <li>Careers</li>
+                <li>News & Media</li>
+                <li>Affiliates</li>
+                <li>Write for Us</li>
+              </ul>
+            </ng-template>
+          </ngb-panel>
+          <ngb-panel id="static-2" title="SUPPORT">
+            <ng-template ngbPanelContent>
+              <ul class="text-start foot-li p-0">
+                <li>FAQ</li>
+                <li>Knowledge Base</li>
+                <li>Contact Us</li>
+                <li>Blog</li>
+              </ul>              
+            </ng-template>
+          </ngb-panel>
+          <ngb-panel id="static-3" title="PRODUCT">
+            <ng-template ngbPanelContent>
+              <ul class="text-start foot-li p-0">
+                <li>Promo Video Maker</li>
+                <li>Commercial Maker</li>
+                <li>Social Media Video Maker</li>
+                <li>eCommerce Ads</li>
+                <li>Facebook Video Maker</li>
+                <li>Facebook Video Ad Creator</li>
+                <li>Facebook Story Ads</li>
+                <li>CInstagram Video Maker</li>
+                <li>Instagram Video Ad Maker</li>
+                <li>Instagram Story Ads</li>
+                <li>YouTube Video Maker</li>
+                <li>YouTube Ad Maker</li>
+                <li>YouTube Outro Maker</li>
+                <li>LinkedIn Video Ads</li>
+                <li>Twitter Video Ads</li>
+                <li>Amazon Video Ads</li>
+                <li>Real Estate Videos</li>
+                <li>Fitness Marketing Videos</li>
+                <li>Fashion Marketing Videos</li>
+                <li>Restaurant Videos</li>
+                <li>Beauty Marketing Videos</li>
+                <li>Travel Ads</li>
+                <li>Business</li>
+                <li>Nonprofit Videos</li>
+              </ul>             
+            </ng-template>
+          </ngb-panel>          
+          <ngb-panel id="static-4" title="TOOLS">
+            <ng-template ngbPanelContent>
+              <ul class="text-start foot-li p-0">
+                <li>All Tools</li>
+                <li>Photos to video maker</li>
+                <li>Online Video Maker</li>
+                <li>Video Ad Maker</li>
+                <li>Social Media Calendar</li>
+                <li>Image Resizer</li>
+                <li>Free Online Collage Maker</li>
+                <li>Facebook Video Covers</li>
+                <li>Video Production Cost Estimator</li>
+                <li>Facebook Ad Budget Calculator</li>
+                <li>Facebook Ads Troubleshooter</li>
+                <li>YouTube Money Calculator</li>
+                <li>MP4 Editor</li>
+                <li>Add Music to Video</li>
+                <li>Video to GIF Maker</li>
+                <li>Add Text to GIF</li>
+                <li>Video Editor for YouTube</li>
+                <li>Meme Maker</li>
+                <li>Birthday Video Maker</li>
+                <li>Online Video Cutter</li>
+                <li>Lyric Video Maker</li>
+                <li>Add Audio to Video</li>
+                <li>Add Text to Video</li>
+                <li>GIF Editor</li>
+                <li>Video Merger</li>
+                <li>Video Compressor</li>
+                <li>Video Resizer</li>
+                <li>Youtube Thumbnail Maker</li>
+                <li>Video Trimmer</li>
+                <li>Add Subtitles to Video</li>
+                <li>Montage Maker</li>
+                <li>Video Cropper</li>
+                <li>Slideshow Maker</li>
+                <li>TikTok Video Editor</li>
+              </ul>            
+            </ng-template>
+          </ngb-panel> 
+          
+        </ngb-accordion>
+
+      </div>
+
+
+      <div class="col-lg-6 col-md-12 col-sm-12">
+        <div class="d-flex">
+          <div class="col-lg-2 col-md-1  col-sm-0">
+          </div>
+          <div class="col-lg-6 col-md-10">
+            <div class="py-3 ">
+              <img class="img-fluid imgs " src="assets/images/logo.svg">
+            </div>
+            <div>
+              <p class="para-font">Promo.com is the #1 video creation platform for businesses and agencies. We help our
+                users create loads of visual content and unlimited videos to promote anything they want effectively.</p>
+            </div>
+            <div class="py-3">
+              <img class="" src="assets/images/Fb-marketting-logo.png">
+            </div>
+            <div class="py-3">
+              <img class="" src="assets/images/our-app-logo.png">
+            </div>
+            <div class="py-3">
+              <div>
+                <p><strong>FOLLOW US</strong></p>
+              </div>
+              <div>
+                <div class="d-flex col-6  justify-content-between">
+                  <div>
+                    <i class="bi bi-facebook"></i>
+                  </div>
+                  <div>
+                    <i class="bi bi-instagram "></i>
+                  </div>
+                  <div>
+                    <i class="bi bi-youtube"></i>
+                  </div>
+                  <div>
+                    <i class="bi bi-twitter"></i>
+                  </div>
+                  <div>
+                    <i class="bi bi-linkedin"></i>
+                  </div>
+                  <div>
+                    <i class="bi bi-pinterest"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!---------------overlay test container-end------------------>
+<!-- <div class="container-fluid ">
+<div class="border-0">
+<div class="border-0">
+<div class="relative">
+<video class="w-100" src="//ak02-video-cdn.slidely.com/static/promo-videos/promo-com/promo.com_BG_v2.webm"  muted="muted" loop="loop" autoplay="autoplay" playsinline=""  ></video>
+<div class="d-flex absolute">
+<span class="text-center" style="margin: auto;">
+<div class="my-1">
+<button> view </button>
+</div>
+<div class="my-1">
+<button> view </button>
+</div>
+</span>
+</div>          
+</div>
+</div>
+</div> -->
+<!---------------overlay test container-end------------------>
+<!-- <div class="container ">
+<div class="row">
+<div class="col-6">
+<div class="relative">
+<video  class="w-100 " loop="" preload="auto">
+<source type="video/mp4" src="https://ak01-video-cdn.slidely.com/static/promo-videos/hp/videos/square1.mp4">
+</video>
+<div class="d-flex absolute ">
+<div class="subb">
+<span class="text-center" style="margin: auto;">
+<div class="my-1">
+<button> view  </button>
+</div>
+<div class="my-1">
+<button> view  </button>
+</div>
+</span>
+</div>                
+</div>               
+</div>
+</div>    
+</div> -->
+<!---------------overlay test container-end------------------->
+<!---------------overlay test container-end------------------>
