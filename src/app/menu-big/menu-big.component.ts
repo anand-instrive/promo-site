@@ -1,12 +1,11 @@
-import { Component,  OnInit,  } from '@angular/core';
-import {NgbRatingConfig} from '@ng-bootstrap/ng-bootstrap';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-sales-page',
-  templateUrl: './sales-page.component.html',
-  styleUrls: ['./sales-page.component.scss']
+  selector: 'app-menu-big',
+  templateUrl: './menu-big.component.html',
+  styleUrls: ['./menu-big.component.scss']
 })
-export class SalesPageComponent implements OnInit {
+export class MenuBigComponent implements OnInit {
 
   typeWritterList = ['Facebook ads', 'Instagram stories', 'YouTube ads', 'Marketing videos', 'Real estate videos', 'Product videos', 'Video listicles', 'Inspirational videos', 'Event promos', 'HR videos', 'Holiday offers', 'Product tutorials'];
   
@@ -19,19 +18,9 @@ export class SalesPageComponent implements OnInit {
   public isCollapsed3 = true;
   public isCollapsed4 = true;
   
-
-  constructor(config: NgbRatingConfig) {
-    config.max = 5;
-    config.readonly = true;
-  }
+  constructor() { }
 
   ngOnInit(): void {
   }
-   
-  funct() {
-    
-  }
- 
 
-  
 }

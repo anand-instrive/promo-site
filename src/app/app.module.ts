@@ -10,6 +10,7 @@ import { TestComponent } from './test/test.component';
 import { NaveBarComponent } from './nave-bar/nave-bar.component';
 import { TestimonialSliderComponent } from './testimonial-slider/testimonial-slider.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { MenuBigComponent } from './menu-big/menu-big.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     FiverrComponent,
     TestComponent,
     NaveBarComponent,
-    TestimonialSliderComponent
+    TestimonialSliderComponent,
+    MenuBigComponent
   ],
   imports: [
     BrowserModule,

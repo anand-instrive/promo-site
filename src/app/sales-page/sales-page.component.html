@@ -137,20 +137,19 @@
       <img class="img-fluid imgs " src="assets/images/logo.svg">
     </div>
     
-    <div class="">
+    <div class="mx-1 mt-4" (mouseenter)="collapse1.toggle()" (mouseleave)="collapse1.toggle()">
       
-      <div class="position-relative px-1 pt-3 ">
+      <div class="position-relative">
         <p class="">
-          <button type="button" class="d-flex btn btn-link text-decoration-none text-dark txt-bg "
-            (mouseenter)="collapse1.toggle()" (mouseleave)="collapse1.toggle()"  [attr.aria-expanded]="!isCollapsed1"
-            aria-controls="collapseExample">
+          <button type="button" class="d-flex btn btn-link text-decoration-none text-dark txt-bg"
+              [attr.aria-expanded]="!isCollapsed1"
+            aria-controls="collapseExample" [ngClass]="isCollapsed1===false ?'text-decoration-true':'text-decoration-false'">
             <span>Create</span> <span class="rotate-arrow "><i class="bi bi-chevron-down"></i></span> 
-          </button>
-          
-        </p>
+          </button>          
+        </p>        
       </div>
       
-      <div class="position-absolute w-100 toggle-item">
+      <div class="position-absolute w-100 toggle-item bg-dark ">
         <div #collapse1="ngbCollapse" [(ngbCollapse)]="isCollapsed1">
           <div class="d-flex card">
             <div class="">
@@ -158,40 +157,40 @@
                 <div class="" >
                   <ul class="menu-ul">
                     <li class="py-2"><strong>Media</strong></li>
-                    <li> Daily Calendar Videos</li>
-                    <li>Facebook Videos</li>
-                    <li>Instagram Videos</li>
-                    <li>Instagram Videos</li>
-                    <li>YouTube Videos</li>
-                    <li>YouTube Intro Videos</li>
+                    <li><a href="">Daily Calendar Videos</a></li>
+                    <li><a href="">Facebook Videos</a></li>
+                    <li><a href="">Instagram Videos</a></li>
+                    <li><a href="">Instagram Videos</a></li>
+                    <li><a href="">YouTube Videos</a></li>
+                    <li><a href="">YouTube Intro Videos</a></li>
                   </ul>
                 </div>
                 <div class="">
                   <ul class="menu-ul">
                     <li class="py-2"><strong>Industries</strong></li>
-                    <li>Real Estate Videos</li>
-                    <li>Fitness Videos</li>
-                    <li>Fashion Videos</li>
-                    <li>Restaurant Videos</li>
-                    <li>Travel Videos</li>
+                    <li><a href="">Real Estate Videos</a></li>
+                    <li><a href="">Fitness Videos</a></li>
+                    <li><a href="">Fashion Videos</a></li>
+                    <li><a href="">Restaurant Videos</a></li>
+                    <li><a href="">Travel Videos</a></li>
                   </ul>
                 </div>
                 <div class="">
                   <ul class="menu-ul">
                     <li class="py-2"><strong>Marketing</strong></li>
-                    <li>Commercial Maker</li>
-                    <li>Facebook Story Ads</li>
-                    <li>Instagram Story Ads</li>
-                    <li>LinkedIn Video Ads</li>
-                    <li>YouTube Ads</li>
-                    <li>Promo Videos</li>
+                    <li><a href="">Commercial Maker</a></li>
+                    <li><a href="">Facebook Story Ads</a></li>
+                    <li><a href="">Instagram Story Ads</a></li>
+                    <li><a href="">LinkedIn Video Ads</a></li>
+                    <li><a href="">YouTube Ads</a></li>
+                    <li><a href="">Promo Videos</a></li>
                   </ul>
                 </div>
                 <div class="">
                   <ul class="menu-ul">
                     <li class="py-2"><strong>E-commerce</strong></li>
-                    <li>E-commerce Ads</li>
-                    <li>Amazon Video Ads</li>
+                    <li><a href="">E-commerce Ads</a></li>
+                    <li><a href="">Amazon Video Ads</a></li>
                   </ul>
                 </div>
               </div>
@@ -208,40 +207,40 @@
                 <div class="col-2 border" >
                   <ul class="menu-ul">
                     <li class="py-2"><strong>Media</strong></li>
-                    <li> Daily Calendar Videos</li>
-                    <li>Facebook Videos</li>
-                    <li>Instagram Videos</li>
-                    <li>Instagram Videos</li>
-                    <li>YouTube Videos</li>
-                    <li>YouTube Intro Videos</li>
+                    <li><a href=""> Daily Calendar Videos</a></li>
+                    <li><a href="">Facebook Videos</a></li>
+                    <li><a href="">Instagram Videos</a></li>
+                    <li><a href="">Instagram Videos</a></li>
+                    <li><a href="">YouTube Videos</a></li>
+                    <li><a href="">YouTube Intro Videos</a></li>
                   </ul>
                 </div>
                 <div class="col-2 border">
                   <ul class="menu-ul">
                     <li class="py-2"><strong>Industries</strong></li>
-                    <li>Real Estate Videos</li>
-                    <li>Fitness Videos</li>
-                    <li>Fashion Videos</li>
-                    <li>Restaurant Videos</li>
-                    <li>Travel Videos</li>
+                    <li><a href="">Real Estate Videos</a></li>
+                    <li><a href="">Fitness Videos</a></li>
+                    <li><a href="">Fashion Videos</a></li>
+                    <li><a href="">Restaurant Videos</a></li>
+                    <li><a href="">Travel Videos</a></li>
                   </ul>
                 </div>
                 <div class="col-2 border">
                   <ul class="menu-ul">
                     <li class="py-2"><strong>Marketing</strong></li>
-                    <li>Commercial Maker</li>
-                    <li>Facebook Story Ads</li>
-                    <li>Instagram Story Ads</li>
-                    <li>LinkedIn Video Ads</li>
-                    <li>YouTube Ads</li>
-                    <li>Promo Videos</li>
+                    <li><a href="">Commercial Maker</a></li>
+                    <li><a href="">Facebook Story Ads</a></li>
+                    <li><a href="">Instagram Story Ads</a></li>
+                    <li><a href="">LinkedIn Video Ads</a></li>
+                    <li><a href="">YouTube Ads</a></li>
+                    <li><a href="">Promo Videos</a></li>
                   </ul>
                 </div>
                 <div class="col-2 border">
                   <ul class="menu-ul">
                     <li class="py-2"><strong>E-commerce</strong></li>
-                    <li>E-commerce Ads</li>
-                    <li>Amazon Video Ads</li>
+                    <li><a href="">E-commerce Ads</a></li>
+                    <li><a href="">Amazon Video Ads</a></li>
                   </ul>
                 </div>
               </div>
@@ -253,17 +252,17 @@
 
     </div>
 
-    <div  class="">
-      <div class="position-relative  px-1 pt-3 ">
+    <div class="mx-1 mt-4" (mouseenter)="collapse2.toggle()" (mouseleave)="collapse2.toggle()">
+      <div class="position-relative">
         <p class="">
           <button type="button" class="d-flex btn btn-link text-decoration-none text-dark txt-bg"
-            (mouseenter)="collapse2.toggle()" (mouseleave)="collapse2.toggle()" [attr.aria-expanded]="!isCollapsed2"
-            aria-controls="collapseExample">
+              [attr.aria-expanded]="!isCollapsed2"
+            aria-controls="collapseExample" [ngClass]="isCollapsed2===false ?'text-decoration-true':'text-decoration-false'">
             <span>Template</span> <span class="rotate-arrow "><i class="bi bi-chevron-down"></i></span> 
           </button>
         </p>
       </div>
-      <div class="position-absolute w-100 toggle-item">
+      <div class="position-absolute w-100 toggle-item p-0">
         <div #collapse2="ngbCollapse" [(ngbCollapse)]="isCollapsed2">
           <div class="d-flex card">
             <div class="">
@@ -271,52 +270,52 @@
                 <div class="">
                   <ul class="menu-ul">
                     <li class="py-2"><strong>Trending Now</strong></li>
-                    <li>Spring</li>
-                    <li>Women's History Month</li>
-                    <li>Easter</li>
-                    <li>Motivational & Inspirational</li>
-                    <li>Memes</li>
+                    <li><a href="">Spring</a></li>
+                    <li><a href="">Women's History Month</a></li>
+                    <li><a href="">Easter</a></li>
+                    <li><a href="">Motivational & Inspirational</a></li>
+                    <li><a href="">Memes</a></li>
                   </ul>
                 </div>
                 <div class="">
                   <ul class="menu-ul">
                     <li class="py-2"><strong>Marketing</strong></li>
-                    <li>Sales & Promotions</li>
-                    <li>Short Ads</li>
-                    <li>Slideshows</li>
+                    <li><a href="">Sales & Promotions</a></li>
+                    <li><a href="">Short Ads</a></li>
+                    <li><a href="">Slideshows</a></li>
                   </ul>
                 </div>
                 <div class="">
                   <ul class="menu-ul">
                     <li class="py-2"><strong>Industries</strong></li>
-                    <li>Real Estate</li>
-                    <li>Health & Fitness</li>
-                    <li>Beauty & Care</li>
-                    <li>Food & Drink</li>
-                    <li>E-commerce & Retail</li>
-                    <li>Recruiting & HR</li>
-                    <li>Education</li>
+                    <li><a href="">Real Estate</a></li>
+                    <li><a href="">Health & Fitness</a></li>
+                    <li><a href="">Beauty & Care</a></li>
+                    <li><a href="">Food & Drink</a></li>
+                    <li><a href="">E-commerce & Retail</a></li>
+                    <li><a href="">Recruiting & HR</a></li>
+                    <li><a href="">Education</a></li>
                   </ul>
                 </div>
                 <div class="">
                   <ul class="menu-ul">
                     <li class="py-2"><strong> Social Media</strong></li>
-                    <li>Facebook</li>
-                    <li>Instagram</li>
-                    <li>TikTok</li>
-                    <li>YouTube</li>
-                    <li>Stories</li>
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">Instagram</a></li>
+                    <li><a href="">TikTok</a></li>
+                    <li><a href="">YouTube</a></li>
+                    <li><a href="">Stories</a></li>
                   </ul>
                 </div>
 
                 <div class="">
                   <ul class="menu-ul">
                     <li class="py-2"><strong>Formats</strong></li>
-                    <li>Meme Videos</li>
-                    <li>6 Second Videos</li>
-                    <li>YouTube Intros</li>
-                    <li>Listicles</li>
-                    <li>Inspirational & Quotes</li>
+                    <li><a href="">Meme Videos</a></li>
+                    <li><a href="">6 Second Videos</a></li>
+                    <li><a href="">YouTube Intros</a></li>
+                    <li><a href="">Listicles</a></li>
+                    <li><a href="">Inspirational & Quotes</a></li>
                   </ul>
                 </div>
 
@@ -328,17 +327,17 @@
     </div>
 
 
-    <div >
-      <div class="position-relative  px-1 pt-3 ">
+    <div class="mx-1 mt-4" (mouseenter)="collapse3.toggle()"  (mouseleave)="collapse3.toggle()">
+      <div class="position-relative">
         <p class="">
           <button type="button" class="d-flex btn btn-link text-decoration-none text-dark txt-bg"
-            (mouseenter)="collapse3.toggle()" (mouseleave)="collapse3.toggle()"  [attr.aria-expanded]="!isCollapsed3"
-            aria-controls="collapseExample">
+              [attr.aria-expanded]="!isCollapsed3"
+            aria-controls="collapseExample" [ngClass]="isCollapsed3===false ?'text-decoration-true':'text-decoration-false'">
             <span>Tools</span> <span class="rotate-arrow "><i class="bi bi-chevron-down"></i></span> 
           </button>
         </p>
       </div>
-      <div class="position-absolute w-100 toggle-item">
+      <div class="position-absolute w-100 toggle-item p-0">
         <div #collapse3="ngbCollapse" [(ngbCollapse)]="isCollapsed3">
           <div class="d-flex card">
             <div class="">
@@ -346,57 +345,57 @@
                 <div class="">
                   <ul class="menu-ul">
                     <li class="py-2"><strong>Video Maker</strong></li>
-                    <li>Online Video Maker</li>
-                    <li>Slideshow Maker</li>
-                    <li>YouTube Intro Maker</li>
-                    <li>Lyric Video Maker</li>
-                    <li>Video Ad Maker</li>
-                    <li>All Tools</li>
+                    <li><a href="">Online Video Maker</a></li>
+                    <li><a href="">Slideshow Maker</a></li>
+                    <li><a href="">YouTube Intro Maker</a></li>
+                    <li><a href="">Lyric Video Maker</a></li>
+                    <li><a href="">Video Ad Maker</a></li>
+                    <li><a href="">All Tools</a></li>
                   </ul>
                 </div>
                 <div class="">
                   <ul class="menu-ul">
                     <li class="py-2"><strong>Video Editor</strong></li>
-                    <li>Online Video Editor</li>
-                    <li>Add Audio to Video</li>
-                    <li>Online Video Cutter</li>
-                    <li>Online MP4 Editor</li>
-                    <li>Video Compressor</li>
-                    <li>Add Text to Video</li>
+                    <li><a href="">Online Video Editor</a></li>
+                    <li><a href="">Add Audio to Video</a></li>
+                    <li><a href="">Online Video Cutter</a></li>
+                    <li><a href="">Online MP4 Editor</a></li>
+                    <li><a href="">Video Compressor</a></li>
+                    <li><a href="">Add Text to Video</a></li>
                   </ul>
                 </div>
                 <div class="">
                   <ul class="menu-ul">
                     <li class="py-2"><strong>Photos</strong></li>
-                    <li>Image Resizer</li>
-                    <li>Free Online Collage Maker</li>
-                    <li>Photos to Video Maker</li>
-                    <li>YouTube Thumbnail Maker</li>
-                    <li>Montage Maker</li>
-                    <li>Meme Maker</li>
+                    <li><a href="">Image Resizer</a></li>
+                    <li><a href="">Free Online Collage Maker</a></li>
+                    <li><a href="">Photos to Video Maker</a></li>
+                    <li><a href="">YouTube Thumbnail Maker</a></li>
+                    <li><a href="">Montage Maker</a></li>
+                    <li><a href="">Meme Maker</a></li>
                     
                   </ul>
                 </div>
                 <div class="">
                   <ul class="menu-ul">
                     <li class="py-2"><strong>GIF</strong></li>
-                    <li>Video to GIF Maker</li>
-                    <li>Add Text to GIF</li>
-                    <li>GIF Editor</li>
-                    <li>Happy Birthday GIF</li>
-                    <li>Merry Christmas GIF</li>
+                    <li><a href="">Video to GIF Maker</a></li>
+                    <li><a href="">Add Text to GIF</a></li>
+                    <li><a href="">GIF Editor</a></li>
+                    <li><a href="">Happy Birthday GIF</a></li>
+                    <li><a href="">Merry Christmas GIF</a></li>
                   </ul>
                 </div>
 
                 <div class="">
                   <ul class="menu-ul">
                     <li class="py-2"><strong>More</strong></li>
-                    <li>Social Media Calendar</li>
-                    <li>Video Production Cost Estimator</li>
-                    <li>Facebook Ad Budget Calculator</li>
-                    <li>Facebook Ads Troubleshooter</li>
-                    <li>YouTube Money Calculator</li>
-                    <li>Promo Marketing Ebook</li>
+                    <li><a href="">Social Media Calendar</a></li>
+                    <li><a href="">Video Production Cost Estimator</a></li>
+                    <li><a href="">Facebook Ad Budget Calculator</a></li>
+                    <li><a href="">Facebook Ads Troubleshooter</a></li>
+                    <li><a href="">YouTube Money Calculator</a></li>
+                    <li><a href="">Promo Marketing Ebook</a></li>
                   </ul>
                 </div>
 
@@ -409,17 +408,17 @@
 
 
 
-    <div >
-      <div class="position-relative  px-1 pt-3 ">
+    <div class="mx-1 mt-4" (mouseenter)="collapse4.toggle()" (mouseleave)="collapse4.toggle()">
+      <div class="position-relative">
         <p class="">
           <button type="button" class="d-flex btn btn-link text-decoration-none text-dark txt-bg"
-            (mouseenter)="collapse4.toggle()" (mouseleave)="collapse4.toggle()"  [attr.aria-expanded]="!isCollapsed4"
-            aria-controls="collapseExample">
+               [attr.aria-expanded]="!isCollapsed4"
+            aria-controls="collapseExample" [ngClass]="isCollapsed4===false ?'text-decoration-true':'text-decoration-false'">
              <span>Resources</span> <span class="rotate-arrow "><i class="bi bi-chevron-down"></i></span> 
           </button>
         </p>
       </div>
-      <div class="position-absolute w-100 toggle-item">
+      <div class="position-absolute w-100 toggle-item p-0">
         <div #collapse4="ngbCollapse" [(ngbCollapse)]="isCollapsed4">
           <div class="d-flex card">
             <div class="">
@@ -427,22 +426,22 @@
                 <div class="">
                   <ul class="menu-ul">
                     <li class="py-2"><strong>Learn</strong></li>
-                    <li>Blog</li>
-                    <li>Promo Academy</li>
-                    <li>Knowledge base</li>
-                    <li>FAQ</li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Promo Academy</a></li>
+                    <li><a href="">Knowledge base</a></li>
+                    <li><a href="">FAQ</a></li>
                     
                   </ul>
                 </div>
                 <div class="">
                   <ul class="menu-ul">
                     <li class="py-2"><strong>Tips & Tutorials</strong></li>
-                    <li>Video Marketing 101</li>
-                    <li>How to create winning videos</li>
-                    <li>7 Things You Could Do With Promo</li>
-                    <li>How to Add Music to a Video</li>
-                    <li>How to Add Subtitles to a Video</li>
-                    <li>The Complete Guide to Video Aspect Ratios</li>
+                    <li><a href="">Video Marketing 101</a></li>
+                    <li><a href="">How to create winning videos</a></li>
+                    <li><a href="">7 Things You Could Do With Promo</a></li>
+                    <li><a href="">How to Add Music to a Video</a></li>
+                    <li><a href="">How to Add Subtitles to a Video</a></li>
+                    <li><a href="">The Complete Guide to Video Aspect Ratios</a></li>
                   </ul>
                 </div>
               </div>
@@ -453,8 +452,8 @@
     </div>
 
 
-    <div>
-      <div class="position-relative  px-1 pt-3 ">
+    <div class="mx-1 mt-4" >
+      <div class="position-relative">
         <p class="">
           <button type="button" class="btn btn-link text-decoration-none text-dark txt-bg"
             
@@ -465,8 +464,8 @@
       </div>      
     </div>
 
-    <div>
-      <div class="position-relative  px-1 pt-3 ">
+    <div class="mx-1 mt-4">
+      <div class="position-relative">
         <p class="">
           <button type="button" class="btn btn-link text-decoration-none text-dark txt-bg"
             

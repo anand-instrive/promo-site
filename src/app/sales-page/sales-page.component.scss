@@ -18,6 +18,10 @@
 .menu-ul {
   li {
     line-height: 2.5rem;
+    
+  }
+  a {
+    cursor: pointer;
   }
 }
 
@@ -48,9 +52,18 @@
   font-size: 15px;
   transition: all 0.2s ease;
 }
-.text-decoration-none:hover {
+.text-decoration-true {
+  color: #ff4070 !important;
   i{
-    transform: rotateZ(-180deg);
+    transform: rotateZ(-180deg);    
+    
+  }
+}
+
+.text-decoration-false {
+  color: black !important;
+  i{
+    // transform: rotateZ(-180deg);    
     
   }
 }
@@ -59,7 +72,7 @@
 // }
 
 .toggle-item {
-  padding-top: 5px;
+  // padding-top: 5px;
   left: 0;
 }
 
