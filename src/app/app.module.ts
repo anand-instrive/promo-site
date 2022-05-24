@@ -11,6 +11,7 @@ import { NaveBarComponent } from './nave-bar/nave-bar.component';
 import { TestimonialSliderComponent } from './testimonial-slider/testimonial-slider.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MenuBigComponent } from './menu-big/menu-big.component';
+import { VideoTestComponent } from './video-test/video-test.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { MenuBigComponent } from './menu-big/menu-big.component';
     TestComponent,
     NaveBarComponent,
     TestimonialSliderComponent,
-    MenuBigComponent
+    MenuBigComponent,
+    VideoTestComponent
   ],
   imports: [
     BrowserModule,

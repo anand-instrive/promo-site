@@ -18,8 +18,8 @@
 .menu-ul {
   li {
     line-height: 2.5rem;
-    
   }
+
   a {
     cursor: pointer;
   }
@@ -36,43 +36,31 @@
 
 .rotate-arrow {
   padding: 1px 5px;
-  // margin: 0 auto;
-  // display: flex;
-  // justify-content: center;
-	-ms-flex-align: center;
-	-webkit-align-items: center;
-	-webkit-box-align: center;
-	align-items: center;
- 
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  align-items: center;
 }
 
 .rotate-arrow i {
-  // padding: 20px;
   display: block;
   font-size: 15px;
   transition: all 0.2s ease;
 }
+
 .text-decoration-true {
   color: #ff4070 !important;
-  i{
-    transform: rotateZ(-180deg);    
-    
+
+  i {
+    transform: rotateZ(-180deg);
   }
 }
 
 .text-decoration-false {
   color: black !important;
-  i{
-    // transform: rotateZ(-180deg);    
-    
-  }
 }
-// .rotate-arrow i:hover {
-//   transform: rotateZ(-180deg);
-// }
 
 .toggle-item {
-  // padding-top: 5px;
   left: 0;
 }
 
@@ -80,34 +68,35 @@
 .star {
   position: relative;
   display: inline-block;
-  // font-size: 1rem;
   font-size: 15px;
   color: white;
   background-color: #d3d3d3;
   padding: 0 2px;
   margin: 0 2px;
 }
+
 .full {
   color: #fff;
-   background-color: #00b67a;
-   padding: 0 2px;
+  background-color: #00b67a;
+  padding: 0 2px;
 }
+
 .half {
   position: absolute;
   display: inline-block;
   overflow: hidden;
   color: #fff;
   background-color: #00b67a;
-  margin-left: -2px;   
+  margin-left: -2px;
   padding-left: 1px;
-  
 }
+
 .trustpilot-seperate-star {
   font-size: 20px;
   color: #00b67a;
 }
-// rating star end
 
+// rating star end
 .main-video-content {
   top: 0;
   right: 0;
@@ -171,29 +160,36 @@
   right: 215px;
 }
 
-@media only screen and (max-width: 600px) {
-
-
+.mobile-panel {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 
-@media (max-width: 768px) {
+.panel-video {
+  left: 33%;
+  top: 48%;
+  width: 35%;
+}
 
-    .main-menu-lg{
-        display: none !important;
-    }
+@media only screen and (max-width: 600px) {}
+
+@media (max-width: 768px) {
+  .main-menu-lg {
+    display: none !important;
+  }
+
   .content-txt {
     text-align: center;
     padding-top: 40px;
     padding-bottom: 40px;
   }
-  
 
   .main-video-content-head {
-    
     font-size: 40px;
     font-weight: bold;
     line-height: 2rem;
-    
   }
 
   .img-left-txt {
@@ -210,21 +206,22 @@
     padding: 25px 0;
   }
 
-
-
   .typewriter {
     text-align: center;
   }
+
   .footer {
     flex-flow: column;
   }
-  .footer-main-menu{
+
+  .footer-main-menu {
     display: none !important;
   }
 
   .ourparterns {
     display: none;
   }
+
   .ourparterns-1 {
     display: block !important;
   }
@@ -232,46 +229,52 @@
   .trusted {
     display: none;
   }
+
   .trusted-1 {
     display: block !important;
   }
-  
-  .footer-small-scr-menu-accordion{
 
+  .footer-small-scr-menu-accordion {
     display: block !important;
-}
-
+  }
 }
 
 @media (max-width: 992px) {
-    .main-menu-lg{
-        display: none !important;
-    }
+  .main-menu-lg {
+    display: none !important;
+  }
+
   .content-txt {
     text-align: center;
     padding-top: 40px;
     padding-bottom: 40px;
   }
 
-  .grid-two,.footer {
+  .grid-two,
+  .footer {
     flex-flow: column;
   }
-  .footer-main-menu{
+
+  .footer-main-menu {
     display: none !important;
   }
-  .footer-small-scr-menu-accordion{
 
-        display: block !important;
+  .footer-small-scr-menu-accordion {
+    display: block !important;
   }
+
   .ourparterns {
     display: none;
   }
+
   .ourparterns-1 {
     display: block !important;
   }
+
   .trusted {
     display: none;
   }
+
   .trusted-1 {
     display: block !important;
   }
@@ -279,15 +282,13 @@
   .vidoe-big-scr {
     display: none !important;
   }
-  .vidoe-mid-scr{
+
+  .vidoe-mid-scr {
     display: block !important;
-  } 
-
+  }
 }
 
-@media (min-width: 1024px) {
-    
-}
+@media (min-width: 1024px) {}
 
 .purple-content {
   background-color: #9013fe;
@@ -321,7 +322,6 @@
     display: block !important;
   }
 }
-
 
 .overlay-btn-div {
   // margin: auto !important;
@@ -419,166 +419,113 @@ ul {
 }
 
 .small-menu {
-   margin-left: auto;
+  margin-left: auto;
 }
 
-
-// ----------------video cetner text check 
-//   div.absolute {
-//     position: absolute;
-//     top: 0;
-//     right: 0;
-//     bottom: 0;
-//     left: 0;
-//     border: 3px solid red;
-//   }
-//   .absolute-video-cls {
-//     top: 0;
-//     bottom: 0;
-//     left: 0;
-//     right: 0;
-//     margin: auto;
-//   }
-
-
-
-// -----------------------image rotation --------------------
-// <img src="https://i.stack.imgur.com/BLkKe.jpg" width="100" height="100"/>
-// img {
-//   transition: transform .7s ease-in-out;
-// }
-// img:hover {
-//   transform: rotate(360deg);
-// }
-
-body
-{
+body {
   margin: 0;
   padding: 0;
-  
   /* make it look decent enough */
   background: #232323;
   color: #cdcdcd;
   font-family: "Avenir Next", "Avenir", sans-serif;
-  
-  overflow-x: hidden; /* needed because hiding the menu on the right side is not perfect,  */
+  overflow-x: hidden;
+  /* needed because hiding the menu on the right side is not perfect,  */
 }
 
-a
-{
+a {
   text-decoration: none;
   color: #232323;
-  
   transition: color 0.3s ease;
 }
 
-a:hover
-{
+a:hover {
   color: tomato;
 }
 
-#menuToggle
-{
-
-  
+#menuToggle {
   padding: 10px 5px;
   display: block;
   position: absolute;
   top: 0px;
   right: 5px;
-
-  
   z-index: 1;
-  
   -webkit-user-select: none;
   user-select: none;
 }
 
-#menuToggle input
-{
+#menuToggle input {
   display: block;
   width: 40px;
   height: 32px;
   position: absolute;
   top: 0px;
   left: -5px;
-  
   cursor: pointer;
-  
-  opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
-  
+  opacity: 0;
+  /* hide this */
+  z-index: 2;
+  /* and place it over the hamburger */
   -webkit-touch-callout: none;
 }
 
 /*
- * Just a quick hamburger
- */
-#menuToggle span
-{
+* Just a quick hamburger
+*/
+#menuToggle span {
   display: block;
   width: 33px;
   height: 4px;
   margin-bottom: 5px;
   position: relative;
-  
   background: #cdcdcd;
   border-radius: 3px;
-  
   z-index: 1;
-  
   transform-origin: 4px 0px;
-  
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+    opacity 0.55s ease;
 }
 
-#menuToggle span:first-child
-{
+#menuToggle span:first-child {
   transform-origin: 0% 0%;
 }
 
-#menuToggle span:nth-last-child(2)
-{
+#menuToggle span:nth-last-child(2) {
   transform-origin: 0% 100%;
 }
 
 /* 
- * Transform all the slices of hamburger
- * into a crossmark.
- */
-#menuToggle input:checked ~ span
-{
+* Transform all the slices of hamburger
+* into a crossmark.
+*/
+#menuToggle input:checked~span {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
   background: #232323;
 }
 
 /*
- * But let's hide the middle one.
- */
-#menuToggle input:checked ~ span:nth-last-child(3)
-{
+* But let's hide the middle one.
+*/
+#menuToggle input:checked~span:nth-last-child(3) {
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2);
 }
 
 /*
- * Ohyeah and the last one should go the other direction
- */
-#menuToggle input:checked ~ span:nth-last-child(2)
-{
+* Ohyeah and the last one should go the other direction
+*/
+#menuToggle input:checked~span:nth-last-child(2) {
   opacity: 1;
   transform: rotate(-45deg) translate(0, -1px);
 }
 
 /*
- * Make this absolute positioned
- * at the top left of the screen
- */
-#menu
-{
+* Make this absolute positioned
+* at the top left of the screen
+*/
+#menu {
   position: absolute;
   width: 100vw;
   margin: -40px 0 0 0;
@@ -586,29 +533,91 @@ a:hover
   padding-top: 60px;
   right: -10px;
   height: 100vh;
-  
   background: white;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
-  
   transform-origin: 0% 0%;
   transform: translate(100%, 0);
-  
-  transition: transform .3s cubic-bezier(0.77,0.2,0.05,1.0);
+  transition: transform .3s cubic-bezier(0.77, 0.2, 0.05, 1.0);
 }
 
-#menu li
-{
+#menu li {
   padding: 10px 0;
   font-size: 22px;
+
+  a {
+    font-size: 15px;
+  }
 }
 
 /*
- * And let's fade it in from the left
- */
-#menuToggle input:checked ~ ul
-{
+* And let's fade it in from the left
+*/
+#menuToggle input:checked~ul {
   transform: none;
   opacity: 1;
+}
+
+@media screen and (max-width: 767px) {
+
+  // mobile
+  .vidoe-mid-scr1 {
+    display: none !important;
+  }
+
+  .vidoe-big-scr1 {
+    display: none !important;
+  }
+
+  .video-sm-scr1 {
+    display: block !important;
+  }
+
+  .video-tot-div {
+    padding-top: 40px !important;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width:1080px) {
+
+  // tablets
+  .vidoe-mid-scr1 {
+    display: block !important;
+  }
+
+  .vidoe-big-scr1 {
+    display: none !important;
+  }
+
+  .video-sm-scr1 {
+    display: none !important;
+  }
+
+  .video-tot-div {
+    padding-top: 40px !important;
+  }
+}
+
+.video-center-text-postion {
+  top: 0%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.vido-content {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.vdio-content-head {
+  font-size: 70px;
+  font-weight: bold;
+  line-height: 4rem;
+}
+
+.video-tot-div {
+  padding-top: 80px;
 }
