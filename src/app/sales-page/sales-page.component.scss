@@ -2,6 +2,14 @@
   padding: 10px 0;
 }
 
+.p-relative {
+  position: relative;
+}
+
+.p-absolute {
+  position: absolute;
+}
+
 .check-margin {
   margin-top: 10px;
   margin-left: 5px;
@@ -54,6 +62,38 @@
   padding-top: 5px;
   left: 0;
 }
+
+// rating star start
+.star {
+  position: relative;
+  display: inline-block;
+  // font-size: 1rem;
+  font-size: 15px;
+  color: white;
+  background-color: #d3d3d3;
+  padding: 0 2px;
+  margin: 0 2px;
+}
+.full {
+  color: #fff;
+   background-color: #00b67a;
+   padding: 0 2px;
+}
+.half {
+  position: absolute;
+  display: inline-block;
+  overflow: hidden;
+  color: #fff;
+  background-color: #00b67a;
+  margin-left: -2px;   
+  padding-left: 1px;
+  
+}
+.trustpilot-seperate-star {
+  font-size: 20px;
+  color: #00b67a;
+}
+// rating star end
 
 .main-video-content {
   top: 0;
@@ -136,6 +176,7 @@
   
 
   .main-video-content-head {
+    
     font-size: 40px;
     font-weight: bold;
     line-height: 2rem;
@@ -231,7 +272,7 @@
 
 }
 
-@media only screen and (min-width: 1200px) {
+@media (min-width: 1024px) {
     
 }
 
